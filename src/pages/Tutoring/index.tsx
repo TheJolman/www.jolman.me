@@ -1,65 +1,75 @@
 export function Tutoring() {
   return (
     <>
-      <div class="max-w-3xl mx-auto flex flex-col items-center justify-center">
-        <div class="p-4 text-center">
-          <h1 class="text-2xl font-bold mb-6">Math Tutoring</h1>
-          <p class="font-bold mb-6">
-            I offer private math tutoring with flexible scheduling and
+      <div className="max-w-3xl mx-auto flex flex-col items-center justify-center">
+        <div className="p-4 text-center">
+          <h1 className="text-2xl font-bold mb-6">Tutoring Services</h1>
+          <p className="font-bold mb-6">
+            I offer private math and computer science tutoring with flexible scheduling and
             personalized instruction.
           </p>
         </div>
 
-        <div class="w-full px-6">
-          <div class="rounded-lg p-6 mb-6 border bg-base-200">
-            <h2 class="text-xl font-bold mb-4">
-              Contact & Availability
-            </h2>
-            <p class="mb-2">
-              For availability and scheduling, please reach out to me at:&nbsp;
-              <a
-                href="mailto:tutoring@jolman.me"
-                class="link"
-              >
-                tutoring@jolman.me
-              </a>
-              &nbsp;or&nbsp;
-              <a
-                href="tel:+13239170915"
-                class="link"
-              >
-                call/text (323) 917-0915
-              </a>.
-              <br />
-              Please provide grade level and name/author/edition of textbook if
-              applicable.
-            </p>
-          </div>
-
-          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <div class="rounded-lg p-6 border shadow-sm bg-base-200">
-              <h2 class="text-xl font-bold mb-4">Rates</h2>
-              <p class="">
-                <span class="font-semibold">$25</span> for sessions up to 1 hour
+        <div className="w-full px-6">
+          <div className="card bg-base-200 shadow-xl border border-base-300 mb-6">
+            <div className="card-body">
+              <h2 className="card-title">Contact & Availability</h2>
+              <p className="mb-2">
+                For availability and scheduling, please reach out to me at:&nbsp;
+                <a
+                  href="mailto:tutoring@jolman.me"
+                  className="link"
+                >
+                  tutoring@jolman.me
+                </a>
+                &nbsp;or&nbsp;
+                <a
+                  href="tel:+13239170915"
+                  className="link"
+                >
+                  call/text (323) 917-0915
+                </a>.
+                <br />
+                Please provide grade level and name/author/edition of textbook if
+                applicable.
               </p>
-              <p class="">
-                <span class="font-semibold">$25/hour</span>{" "}
+              <h2 className="card-title">Rates</h2>
+              <p>
+                <span className="font-semibold">$35</span> for sessions up to 1 hour
+              </p>
+              <p>
+                <span className="font-semibold">$35/hour</span>{" "}
                 for extended sessions
               </p>
             </div>
+          </div>
 
-            <div class="rounded-lg p-6 border shadow-sm bg-base-200">
-              <h2 class="text-xl font-bold mb-4">Topics Offered</h2>
-              <p class="mb-3">
+          <div className="card bg-base-200 shadow-xl border border-base-300 mb-6">
+            <div className="card-body">
+              <h2 className="card-title">Topics Offered</h2>
+
+              <p className="mb-3">
                 All K-12 mathematics topics including:
               </p>
-              <ul class="text-sm space-y-1">
+              <ul className="text-sm space-y-1 mb-3">
                 <li>• Algebra & Geometry</li>
                 <li>• Trigonometry</li>
                 <li>• Pre-Calculus & Calculus</li>
                 <li>• Test Preparation</li>
               </ul>
-              <p class="text-sm mt-3 italic">
+
+              <p className="mb-3">
+                Varied topics in Computer Science and coding:
+              </p>
+              <ul className="text-sm space-y-1">
+                <li>• Introductory & intermediate programming</li>
+                <li>• Linux, system administration, and the command line</li>
+                <li>• Back-end web programming</li>
+                <li>• Programming for mathematics</li>
+                <li>• Basic web design</li>
+              </ul>
+
+              <p className="text-sm mt-3 italic">
                 Advanced topics require advance notice for preparation.
               </p>
             </div>
