@@ -13,7 +13,7 @@ export function Resume() {
   }, []);
 
   return (
-    <div class="max-w-3xl mx-auto flex flex-col items-center">
+    <div class="max-w-3xl mx-auto flex flex-col items-center mb-6">
       <div className="flex justify-center my-4">
         <a
           href="https://github.com/TheJolman/resume/raw/main/resume.pdf"
