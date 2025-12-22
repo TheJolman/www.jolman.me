@@ -40,10 +40,10 @@ export function Tutoring() {
             <div class="rounded-lg p-6 border shadow-sm bg-base-200">
               <h2 class="text-xl font-bold mb-4">Rates</h2>
               <p class="">
-                <span class="font-semibold">$25</span> for sessions up to 1 hour
+                <span class="font-semibold">$35</span> for sessions up to 1 hour
               </p>
               <p class="">
-                <span class="font-semibold">$25/hour</span>{" "}
+                <span class="font-semibold">$35/hour</span>{" "}
                 for extended sessions
               </p>
             </div>
