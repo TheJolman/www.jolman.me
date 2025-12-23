@@ -8,23 +8,27 @@ export function About() {
           <h1 className="text-2xl font-bold mb-6">About Me</h1>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 mb-6">
-          <div className="avatar mb-6">
-            <div className="w-64 rounded-xl">
-              <img
-                src={profilePic}
-                alt="Joshua Holman"
-              />
+        <div className="w-full px-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6 items-center">
+            <div className="avatar flex justify-center md:justify-start">
+              <div className="w-80 rounded-xl">
+                <img
+                  src={profilePic}
+                  alt="Joshua Holman"
+                />
+              </div>
+            </div>
+            <div className="card bg-base-200 shadow-xl border border-base-300 mb-6">
+              <div className="card-body">
+                <p className="font-bold text-lg">
+                  Hi! I'm a Computer Science graduate and tutor from Torrance, California.
+                </p>
+              </div>
             </div>
           </div>
-          <p className="font-bold mb-6">
-            I'm a math tutor and fourth year CS student at CSU, Fullerton.
-          </p>
-        </div>
 
-        <div className="w-full px-6">
           <div className="card bg-base-200 shadow-xl border border-base-300 mb-6">
-            <div className="card-body clearfix">
+            <div className="card-body flow-root">
               <h2 className="card-title mb-4">Background</h2>
               <p className="mb-4">
                 I first attended college at El Camino Community College in
