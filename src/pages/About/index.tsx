@@ -6,6 +6,17 @@ export function About() {
       <div className="max-w-3xl mx-auto flex flex-col items-center justify-center">
         <div className="p-4 text-center">
           <h1 className="text-2xl font-bold mb-6">About Me</h1>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 mb-6">
+          <div className="avatar mb-6">
+            <div className="w-64 rounded-xl">
+              <img
+                src={profilePic}
+                alt="Joshua Holman"
+              />
+            </div>
+          </div>
           <p className="font-bold mb-6">
             I'm a math tutor and fourth year CS student at CSU, Fullerton.
           </p>
@@ -15,11 +26,6 @@ export function About() {
           <div className="card bg-base-200 shadow-xl border border-base-300 mb-6">
             <div className="card-body clearfix">
               <h2 className="card-title mb-4">Background</h2>
-              <img
-                src={profilePic}
-                alt="Joshua Holman"
-                className="w-full md:w-5/12 md:float-right rounded-xl shadow-lg mb-6 md:mb-2 md:ml-6 object-cover"
-              />
               <p className="mb-4">
                 I first attended college at El Camino Community College in
                 Torrance, CA. There I played collegiate tennis and earned two
