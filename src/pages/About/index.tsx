@@ -9,16 +9,16 @@ export function About() {
         </div>
 
         <div className="w-full px-6">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6 items-center">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
             <div className="avatar flex justify-center md:justify-start">
               <div className="w-80 rounded-xl">
                 <img
                   src={profilePic}
-                  alt="Joshua Holman"
+                  alt="Josh Holman"
                 />
               </div>
             </div>
-            <div className="card bg-base-200 shadow-xl border border-base-300 mb-6">
+            <div className="card bg-base-200 shadow-xl border border-base-300">
               <div className="card-body">
                 <p className="font-bold text-lg">
                   Hi! I'm a Computer Science graduate and tutor from Torrance, California.
