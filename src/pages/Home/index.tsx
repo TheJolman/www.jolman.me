@@ -11,8 +11,8 @@ export function Home() {
           <div className="max-w-md">
             <h1 className="text-5xl font-bold">Hello there</h1>
             <p className="py-6">
-              I'm Josh Holman, a Computer Science student, software developer,
-              and math tutor. Welcome to my site.
+              I'm Josh Holman, a software developer
+              and tutor. Welcome to my site.
             </p>
             <div className="flex flex-col items-center gap-4">
               {buttons.map((button) => (
