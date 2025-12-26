@@ -48,30 +48,30 @@ export function Tutoring() {
             <div className="card-body">
               <h2 className="card-title">Topics Offered</h2>
 
-              <p className="mb-3">
+              <h3 className="mb-3 text-lg">
                 All K-12 mathematics topics including:
-              </p>
-              <ul className="text-sm space-y-1 mb-3">
+              </h3>
+              <ul className="text-sm space-y-1 mb-1">
                 <li>• Algebra & Geometry</li>
                 <li>• Trigonometry</li>
                 <li>• Pre-Calculus & Calculus</li>
                 <li>• Test Preparation</li>
               </ul>
-
-              <p className="mb-3">
-                Varied topics in Computer Science and coding:
+              <p className="text-sm italic mb-3">
+                Advanced topics require advance notice for preparation.
               </p>
+
+              <h3 className="mb-3 text-lg">
+                Varied topics in Computer Science and coding:
+              </h3>
               <ul className="text-sm space-y-1">
-                <li>• Introductory & intermediate programming</li>
-                <li>• Linux, system administration, and the command line</li>
+                <li>• Introductory & intermediate general programming</li>
+                <li>• Linux, intro to system administration, and the command line</li>
                 <li>• Back-end web programming</li>
                 <li>• Programming for mathematics</li>
                 <li>• Basic web design</li>
               </ul>
 
-              <p className="text-sm mt-3 italic">
-                Advanced topics require advance notice for preparation.
-              </p>
             </div>
           </div>
         </div>
