@@ -39,14 +39,14 @@ export function About() {
                 Torrance, CA. There I played collegiate tennis and earned two
                 associate degrees: Mathematics and General Studies w/ emphpasis in
                 Physical Sciences. After five semesters I had fully transferred to
-                CSU, Fullerton where I earned a BS in Computer Science with a minor in Math.
+                CSU Fullerton where I earned a BS in Computer Science with a minor in Math.
                 I was a board member of my schools ACM chapter where I lead one of our open-source
                 projects (see api.acmcsuf.com on my <a className="link" href="/portfolio"> portfolio
                 </a> for more info). On top of being a lead developer, I created workshops with
                 my team and personally lead and demo'd a few in my last semester. Some
                 highlights included my personal favorite, the Advanced Git Workshop, our Inro
                 to Rust Workshop, and our GitHub Actions Workshop. All of these were designed
-                to introduce technologies and tools that would be useful to our fellow student
+                to introduce technologies and tools that would be useful to fellow student
                 developers, and to show them how powerful they can be with the problems they're
                 designed to solve.
               </p>
@@ -59,23 +59,29 @@ export function About() {
                 >
                   rice
                 </a>) and generally into tech. I enjoy self-hosting things on my
-                home server, writing code, and optiimizing my workflow. While I
+                home server, writing code, and optimizing my development workflow. While I
                 can't call myself a hardware engineer, I enjoy tinkering with physical
-                hardware, and fixing or upgrading devices when I can.
+                hardware, and fixing or upgrading devices when I can. My home server functions
+                as a file upload and storage server (currently uses SFTP, might add Samba
+                support as well) and of course a Minecraft server for my friends and I.
               </p>
 
               <p className="mb-4">
                 Besides school and software, I'm interested in literature and
                 music, as well as various sports. Some of my favorite authors are
                 George R. R. Martin, Vladimir Nabokov, and Sylvia Plath. I've
-                played tennis competetively up until recently, and I also enjoy
-                golf and snowboarding (although my wallet doesn't).
+                played tennis competetively up until recently, and I also enjoy skateboarding,
+                golf, and snowboarding.
               </p>
 
               <p className="">
                 Finally, I've been working as an instructor at various Mathnasium
                 locations for nearly two years at this point, and I do private
-                tutoring as well when the opportunity presents itself.
+                tutoring as well when the opportunity presents itself. While not the most
+                lucrative of jobs, I truly love it as get to directly help people with
+                something that I enjoy. Nothing makes me happier than helping a student
+                acheive an 'aha' moment or getting them excited about a subject many see
+                as dry. I'm also hoping to start tutoring people in Copmuter Science topics, too.
               </p>
             </div>
           </div>
@@ -85,11 +91,12 @@ export function About() {
               <div className="card-body">
                 <h2 className="card-title">Interests</h2>
                 <ul className="space-y-2">
-                  <li>• Programming of all kinds</li>
-                  <li>• System administration and devops tasks</li>
-                  <li>• Math!</li>
-                  <li>• Literature and Music</li>
+                  <li>• Programming of all kinds (but mostly server-side stuff)</li>
+                  <li>• System administration and DevOps</li>
+                  <li>• Math</li>
+                  <li>• Reading and Music</li>
                   <li>• Fitness</li>
+                  <li>• Helping others 😁</li>
                 </ul>
               </div>
             </div> {/* end left col */}
