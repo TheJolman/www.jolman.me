@@ -20,8 +20,12 @@ export function About() {
             </div>
             <div className="card bg-base-200 shadow-xl border border-base-300">
               <div className="card-body">
-                <p className="font-bold text-lg">
+                <h2 className="card-title">
                   Hi! I'm a Computer Science graduate and tutor from Torrance, California.
+                </h2>
+                <p>
+                  I'm currently looking for work in DevOps, Software Engineering, or other
+                  technical field.
                 </p>
               </div>
             </div>
@@ -35,13 +39,20 @@ export function About() {
                 Torrance, CA. There I played collegiate tennis and earned two
                 associate degrees: Mathematics and General Studies w/ emphpasis in
                 Physical Sciences. After five semesters I had fully transferred to
-                CSU, Fullerton where I am now, in my final semester. My degree
-                will be in CS with a minor in Math. I am a board member of my
-                schools ACM chapter where I co-lead one of our open-source
-                projects.
+                CSU, Fullerton where I earned a BS in Computer Science with a minor in Math.
+                I was a board member of my schools ACM chapter where I lead one of our open-source
+                projects (see api.acmcsuf.com on my <a className="link" href="/portfolio"> portfolio
+                </a> for more info). On top of being a lead developer, I created workshops with
+                my team and personally lead and demo'd a few in my last semester. Some
+                highlights included my personal favorite, the Advanced Git Workshop, our Inro
+                to Rust Workshop, and our GitHub Actions Workshop. All of these were designed
+                to introduce technologies and tools that would be useful to our fellow student
+                developers, and to show them how powerful they can be with the problems they're
+                designed to solve.
               </p>
-              <p className="">
-                I'm a huge Linux enthusiast (take a look at my{"  "}
+
+              <p className="mb-4">
+                I'm a huge Linux enthusiast (take a look at my{" "}
                 <a
                   className="link"
                   href="https://github.com/thejolman/.dotfiles"
@@ -49,11 +60,11 @@ export function About() {
                   rice
                 </a>) and generally into tech. I enjoy self-hosting things on my
                 home server, writing code, and optiimizing my workflow. While I
-                can't call myself an engineer, I enjoy tinkering with physical
-                hardware, and fixing/upgrading devices when I can.
+                can't call myself a hardware engineer, I enjoy tinkering with physical
+                hardware, and fixing or upgrading devices when I can.
               </p>
 
-              <p className="">
+              <p className="mb-4">
                 Besides school and software, I'm interested in literature and
                 music, as well as various sports. Some of my favorite authors are
                 George R. R. Martin, Vladimir Nabokov, and Sylvia Plath. I've
@@ -70,7 +81,7 @@ export function About() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
-            <div className="card bg-base-200 shadow-xl border border-base-300">
+            <div className="card bg-base-200 shadow-xl border border-base-300"> {/* left col */}
               <div className="card-body">
                 <h2 className="card-title">Interests</h2>
                 <ul className="space-y-2">
@@ -81,18 +92,17 @@ export function About() {
                   <li>• Fitness</li>
                 </ul>
               </div>
-            </div>
+            </div> {/* end left col */}
 
-            <div className="card bg-base-200 shadow-xl border border-base-300">
+            <div className="card bg-base-200 shadow-xl border border-base-300"> {/* right col */}
               <div className="card-body">
                 <h2 className="card-title">Experience</h2>
-                <p className="mb-3">
+                <p className="">
                   I've worked a few different, unrelated jobs. First as a hospital
                   warehouse worker, then (I occassionally still do) as a tennis
                   instructor, and now as a math instructor. The last two positions
                   have largely been jobs where I work with kids, which I enjoy.
-                </p>
-                <p className="text-sm">
+                  <br /><br />
                   See my{" "}
                   <a
                     className="link"
@@ -100,12 +110,12 @@ export function About() {
                   >
                     linkedin
                   </a>{" "}
-                  more information.
+                  for more information.
                 </p>
-
               </div>
-            </div>
+            </div> {/* end right col */}
           </div>
+
         </div>
       </div>
     </>
