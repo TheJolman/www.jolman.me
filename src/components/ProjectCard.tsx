@@ -6,7 +6,7 @@ interface ProjectCardProps {
   githubLink: string;
 }
 
-export function ProjectCard(
+export default function ProjectCard(
   { title, description, technologies, liveLink, githubLink }: ProjectCardProps,
 ) {
   return (
