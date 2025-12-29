@@ -1,37 +1,70 @@
-import { ProjectCard } from '../../components/ProjectCard'
+import ProjectCard from '../../components/ProjectCard'
 
 export function Portfolio() {
   const projects = [
     {
       title: "Club Data API: api.acmcsuf.com",
-      description:
-        "API in development for club to manage data about board members, announcements, and events. Created CI pipeline and branch protection rules to enable safe collaboration with a team.",
+      description: `
+acm@CSUF's official data layer. Utilized Discord OAuth2 to allow club members with sufficient roles
+in the main discord server to modify or view resources such as events, members, and announcements.
+Repository contains both API server as well a lightweight CLI client useful for querying the
+server and testing the OAuth2 flow. My role was lead developer - I did and still do plan/create
+the largest changes the project requires. I also delegated tasks to our other developers and
+worked through blockers as they came up. I created our current dev shell and CI pipeline that
+enables supreme reproducability and code quality standards on merge.
+`,
       technologies: "Go, Gin, SQLite, OpenAPI, Nix, GitHub Actions",
       githubLink: "https://github.com/acmcsufoss/api.acmcsuf.com",
     },
     {
       title: "Playlist Rating Web App: Dumps or Fire",
-      description:
-        "Full-stack web application that rates playlists, albums and songs using popularity data from Spotify. Created CI/CD pipeline to enforce code quality and ensure production is up to date.",
+      description: `
+Full-stack web application that rates playlists, albums and songs using popularity data from
+Spotify. Created CI/CD pipeline to enforce code quality and ensure production is up to date.
+`,
       technologies:
         "Django, Python, Bootstrap, Spotify API, fly.io, GitHub Actions, Docker",
       githubLink: "https://github.com/thejolman/dumps-or-fire",
       liveLink: "",
     },
     {
-      title: "Task Tracker CLI: Terminder",
-      description:
-        "Simple and fast CLI that keeps track of priorities. Uses file serialization and shortest string matching for easy use.",
-      technologies: "C++, Cereal, Nix, pre-commit, GitHub Actions",
-      githubLink: "https://github.com/TheJolman/terminder",
-      liveLink: "",
+      title: "Productivity App: Motion",
+      description: `
+asdf
+`,
+      technologies: "Go, Docker, Terraform, Postgres, MinIO, React, Tanstack Router",
+      githubLink: "https://github.com/tomasohchom/motion",
+    },
+    {
+      title: "Home Server",
+      description: `
+OpenSUSE Leap 16.0 powered physical server, Intel i7 4790. Runs Pi-Hole DNS server and ad blocker
+for my home network, file upload/storage server, and Minecraft server. The latter two services
+are available over the WAN with properly configured firewall and network traffic security tools
+(e.g., fail2ban). Most services are containerized with docker and all are configured with
+systemd to launch on startup.
+`,
+      technologies: "Linux, OpenSUSE, Docker, Caddy, Systemd, Networking, Cloudflare",
+      githubLink: "https://github.com/thejolman/homelab",
     },
     {
       title: "MediaWiki AWS",
-      description:
-        "Terraform Infrastructure as Code (IaC) for deploying MediaWiki on AWS with proper configuration and security.",
+      description: `
+Terraform Infrastructure as Code (IaC) for deploying MediaWiki on AWS with proper configuration
+and security.
+`,
       technologies: "Terraform, AWS",
       githubLink: "https://github.com/TheJolman/mediawiki-aws",
+      liveLink: "",
+    },
+    {
+      title: "Task Tracker CLI: Terminder",
+      description: `
+Simple and fast CLI that keeps track of priorities. Uses file serialization and shortest string
+matching for easy use.
+`,
+      technologies: "C++, Cereal, Nix, pre-commit, GitHub Actions",
+      githubLink: "https://github.com/TheJolman/terminder",
       liveLink: "",
     },
   ];

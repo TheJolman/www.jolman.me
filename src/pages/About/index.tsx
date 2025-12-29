@@ -1,4 +1,5 @@
 import profilePic from '../../assets/profile.jpg';
+import Card from '../../components/Card';
 
 export function About() {
   return (
@@ -18,22 +19,17 @@ export function About() {
                 />
               </div>
             </div>
-            <div className="card bg-base-200 shadow-xl border border-base-300">
-              <div className="card-body">
-                <h2 className="card-title">
-                  Hi! I'm a Computer Science graduate and tutor from Torrance, California.
-                </h2>
-                <p>
-                  I'm currently looking for work in DevOps, Software Engineering, or other
-                  technical field.
-                </p>
-              </div>
-            </div>
+
+            <Card title="Hi! I'm a Computer Science graduate and tutor from Torrance, California">
+              <p>
+                I'm currently looking for work in DevOps, Software Engineering, or other
+                technical field.
+              </p>
+            </Card>
           </div>
 
           <div className="card bg-base-200 shadow-xl border border-base-300 mb-6">
-            <div className="card-body flow-root">
-              <h2 className="card-title mb-4">Background</h2>
+            <Card title="Background">
               <p className="mb-4">
                 I first attended college at El Camino Community College in
                 Torrance, CA. There I played collegiate tennis and earned two
@@ -83,44 +79,38 @@ export function About() {
                 acheive an 'aha' moment or getting them excited about a subject many see
                 as dry. I'm also hoping to start tutoring people in Copmuter Science topics, too.
               </p>
-            </div>
+            </Card>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
-            <div className="card bg-base-200 shadow-xl border border-base-300"> {/* left col */}
-              <div className="card-body">
-                <h2 className="card-title">Interests</h2>
-                <ul className="space-y-2">
-                  <li>• Programming of all kinds (but mostly server-side stuff)</li>
-                  <li>• System administration and DevOps</li>
-                  <li>• Math</li>
-                  <li>• Reading and Music</li>
-                  <li>• Fitness</li>
-                  <li>• Helping others 😁</li>
-                </ul>
-              </div>
-            </div> {/* end left col */}
+            <Card title="Interests">
+              <ul className="space-y-2">
+                <li>• Programming of all kinds (but mostly server-side stuff)</li>
+                <li>• System administration and DevOps</li>
+                <li>• Math</li>
+                <li>• Reading and Music</li>
+                <li>• Fitness</li>
+                <li>• Helping others 😁</li>
+              </ul>
+            </Card>
 
-            <div className="card bg-base-200 shadow-xl border border-base-300"> {/* right col */}
-              <div className="card-body">
-                <h2 className="card-title">Experience</h2>
-                <p className="">
-                  I've worked a few different, unrelated jobs. First as a hospital
-                  warehouse worker, then (I occassionally still do) as a tennis
-                  instructor, and now as a math instructor. The last two positions
-                  have largely been jobs where I work with kids, which I enjoy.
-                  <br /><br />
-                  See my{" "}
-                  <a
-                    className="link"
-                    href="https://www.linkedin.com/in/joshua-holman-685a39244/"
-                  >
-                    linkedin
-                  </a>{" "}
-                  for more information.
-                </p>
-              </div>
-            </div> {/* end right col */}
+            <Card title="Experience">
+              <p className="">
+                I've worked a few different, unrelated jobs. First as a hospital
+                warehouse worker, then (I occassionally still do) as a tennis
+                instructor, and now as a math instructor. The last two positions
+                have largely been jobs where I work with kids, which I enjoy.
+                <br /><br />
+                See my{" "}
+                <a
+                  className="link"
+                  href="https://www.linkedin.com/in/joshua-holman-685a39244/"
+                >
+                  linkedin
+                </a>{" "}
+                for more information.
+              </p>
+            </Card>
           </div>
 
         </div>
