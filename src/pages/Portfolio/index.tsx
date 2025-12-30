@@ -116,7 +116,7 @@ matching for easy use.
   ];
 
   return (
-    <div className="max-w-screen-md mx-auto flex flex-col items-center justify-center mb-6">
+    <div className="max-w-3xl mx-auto flex flex-col items-center justify-center mb-6">
       <div className="flex justify-center my-4 gap-4">
         {links.map((link) => (
           <a href={link.href} key={link.href} className="btn btn-primary">
