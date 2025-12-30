@@ -1,4 +1,4 @@
-import { buttons } from "../../constants/buttons";
+import { PageLinks } from "../../constants/buttons";
 
 export function Home() {
   return (
@@ -14,11 +14,11 @@ export function Home() {
               I'm Josh Holman, a software developer
               and tutor. Welcome to my site.
             </p>
-            <div className="flex flex-col items-center gap-4">
-              {buttons.map((button) => (
+            <div className="flex flex-col items-center join join-vertical">
+              {PageLinks.map((button) => (
                 <a
                   href={button.href}
-                  className="btn btn-primary btn-wide"
+                  className="btn btn-primary btn-wide join-item shadow-xl border-base-300 border"
                   key={button.href}
                 >
                   {button.content}

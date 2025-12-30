@@ -1,4 +1,4 @@
-import { buttons } from "../constants/buttons";
+import { PageLinks } from "../constants/buttons";
 import { ThemeToggler } from "./ThemeToggler";
 
 export function Navbar() {
@@ -12,7 +12,7 @@ export function Navbar() {
 
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">
-          {buttons.map((button) => (
+          {PageLinks.map((button) => (
             <li key={button.href}>
               <a href={button.href}>{button.content}</a>
             </li>
@@ -43,7 +43,7 @@ export function Navbar() {
             tabIndex={0}
             className="menu dropdown-content mt-3 z-1 p-2 shadow bg-accent text-accent-content rounded-box w-52"
           >
-            {buttons.map((button) => (
+            {PageLinks.map((button) => (
               <li key={button.href}>
                 <a href={button.href}>{button.content}</a>
               </li>
