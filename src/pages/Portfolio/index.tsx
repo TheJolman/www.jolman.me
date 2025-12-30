@@ -133,7 +133,7 @@ matching for easy use.
             description={project.description}
             technologies={project.technologies}
             liveLink={project.liveLink}
-            githubLink={project.githubLink}
+            sourceLink={project.githubLink}
           />
         ))}
       </div>
