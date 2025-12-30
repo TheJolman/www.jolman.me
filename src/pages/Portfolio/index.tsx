@@ -116,7 +116,7 @@ matching for easy use.
   ];
 
   return (
-    <div className="max-w-screend-md mx-auto flex flex-col items-center justify-center mb-6">
+    <div className="max-w-screen-md mx-auto flex flex-col items-center justify-center mb-6">
       <div className="flex justify-center my-4 gap-4">
         {links.map((link) => (
           <a href={link.href} key={link.href} className="btn btn-primary">
@@ -138,30 +138,28 @@ matching for easy use.
         ))}
       </div>
 
-      <div className="w-full max-w-md mx-auto mb-10">
+      <div className="w-full max-w-md mx-auto mb-10 min-h-[410px]">
         {myData.map((category, index) => (
           <div
-            key={category.title}
-            className="collapse collapse-arrow bg-base-200 border border-base-300"
+            className="collapse collapse-arrow bg-base-200 shadow-200 shadow-xl border border-base-300"
           >
             <input
               type="radio"
-              name="my-accordian-2"
+              name="portfolio-data-accordian"
               defaultChecked={index === 0}
             />
             <div className="collapse-title font-semibold">{category.title}</div>
-            <div className="collapse-content text-md ml-4">
-              <div className="min-h-40">
-                <ul>
-                  {category.content.map((item) => (
-                    <li key={item}>{item}</li>
-                  ))}
-                </ul>
-              </div>
+            <div className="collapse-content ml-4">
+              <ul style={{ listStyleType: 'circle' }}>
+                {category.content.map((item) => (
+                  <li key={item}>{item}</li>
+                ))}
+              </ul>
             </div>
           </div>
         ))}
       </div>
+
     </div>
   );
 }
