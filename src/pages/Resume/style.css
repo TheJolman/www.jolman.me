@@ -7,63 +7,35 @@
 .resume-container h2,
 .resume-container h3 {
   font-weight: bold;
-  margin-bottom: 0.5em;
 }
 
 .resume-container h1 {
   font-size: 2.5em;
   text-align: center;
-  margin-bottom: 0.2em;
 }
 
 .resume-container h2 {
   font-size: 1.8em;
-  border-bottom: 2px solid var(--b3, #d1d5db);
   padding-bottom: 0.3em;
-  margin-top: 1.5em;
 }
 
 .resume-container h3 {
   font-size: 1.3em;
-  margin-top: 1em;
 }
 
-.resume-container p {
+.resume-container hr {
+  margin-top: 1em;
   margin-bottom: 1em;
 }
 
 .resume-container ul {
+  list-style-type: circle;
   list-style-position: inside;
   padding-left: 1em;
 }
 
-.resume-container hr {
-  border: none;
-  border-top: 2px solid var(--b3, #d1d5db);
-  margin: 2em 0;
-}
-
 /* Contact info at the top */
-.resume-container h1 + p {
+.resume-container h1+p {
   text-align: center;
   font-size: 0.9em;
-  margin-bottom: 2em;
-}
-
-/* Technical Skills section */
-#technical-skills + ul {
-  list-style: none;
-  padding: 0;
-  columns: 2;
-  column-gap: 2em;
-}
-
-#technical-skills + ul > li {
-  break-inside: avoid-column;
-  padding-bottom: 0.5em;
-}
-
-/* Projects section */
-#projects + h3 {
-  margin-top: 2em;
 }
