@@ -1,4 +1,4 @@
-export const buttons = [
+export const PageLinks = [
   {
     href: "/portfolio",
     content: "Portfolio"
