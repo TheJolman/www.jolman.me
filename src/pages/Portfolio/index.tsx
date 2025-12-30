@@ -69,6 +69,21 @@ matching for easy use.
     },
   ];
 
+  const links = [
+    {
+      href: "https://www.github.com/TheJolman",
+      content: "My Github",
+    },
+    {
+      href: "https://www.linkedin.com/in/joshua-holman-685a39244/",
+      content: "My Linkedin",
+    },
+    {
+      href: "/resume",
+      content: "My Resume",
+    },
+  ];
+
   const myData = [
     {
       title: "Relevant Coursework",
@@ -97,21 +112,6 @@ matching for easy use.
         "Nix/NixOS, Linux, Docker",
         "GitHub Actions, Vim",
       ],
-    },
-  ];
-
-  const links = [
-    {
-      href: "https://www.github.com/TheJolman",
-      content: "My Github",
-    },
-    {
-      href: "https://www.linkedin.com/in/joshua-holman-685a39244/",
-      content: "My Linkedin",
-    },
-    {
-      href: "/resume",
-      content: "My Resume",
     },
   ];
 
