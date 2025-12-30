@@ -22,11 +22,11 @@ export function Resume() {
       <div className="flex justify-center my-4">
         <a
           href="https://github.com/TheJolman/resume/raw/main/resume.pdf"
-          className="btn btn-primary"
+          className="btn btn-neutral"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Download PDF
+          PDF Version
         </a>
       </div>
       <main className="resume-container">

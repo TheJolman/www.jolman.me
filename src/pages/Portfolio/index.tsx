@@ -4,7 +4,7 @@ export function Portfolio() {
   const links = [
     {
       href: "https://www.github.com/TheJolman",
-      content: "My Github",
+      content: "My GitHub",
     },
     {
       href: "https://www.linkedin.com/in/joshua-holman-685a39244/",
@@ -51,7 +51,7 @@ export function Portfolio() {
     <div className="max-w-3xl mx-auto flex flex-col mb-6">
       <div className="flex justify-center my-4 gap-4">
         {links.map((link) => (
-          <a href={link.href} key={link.href} className="btn btn-primary">
+          <a href={link.href} key={link.href} className="btn btn-neutral">
             {link.content}
           </a>
         ))}
