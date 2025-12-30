@@ -48,7 +48,7 @@ export function Portfolio() {
   ];
 
   return (
-    <div className="max-w-3xl mx-auto flex flex-col items-center justify-center mb-6">
+    <div className="max-w-3xl mx-auto flex flex-col mb-6">
       <div className="flex justify-center my-4 gap-4">
         {links.map((link) => (
           <a href={link.href} key={link.href} className="btn btn-primary">
@@ -57,7 +57,7 @@ export function Portfolio() {
         ))}
       </div>
 
-      <div className="max-w-3xl mx-auto flex flex-col gap-4 mb-10">
+      <div className="max-w-3xl mx-auto flex flex-col gap-4">
         <ProjectCard
           title="Club Data API: api.acmcsuf.com"
           technologies="Go, Gin, SQLite, OpenAPI, Nix, GitHub Actions"
@@ -130,7 +130,9 @@ export function Portfolio() {
         </ProjectCard>
       </div>
 
-      <div className="w-full max-w-md mx-auto mb-10 min-h-[420px]">
+      <div className="divider"></div>
+
+      <div className="w-full max-w-md mx-auto min-h-[550px]">
         {myData.map((category, index) => (
           <div
             key={category.title}
