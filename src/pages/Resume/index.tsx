@@ -14,11 +14,11 @@ export function Resume() {
   }, []);
 
   if (!markdown) {
-    return <p>Fetching my most recent resume...</p>
+    return <p className="m-5">Fetching my most recent resume...</p>
   }
 
   return (
-    <div class="max-w-3xl mx-auto flex flex-col items-center mb-6">
+    <div className="max-w-3xl mx-auto flex flex-col items-center mb-6">
       <div className="flex justify-center my-4">
         <a
           href="https://github.com/TheJolman/resume/raw/main/resume.pdf"
