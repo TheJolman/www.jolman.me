@@ -48,14 +48,14 @@ export function Portfolio() {
   ];
 
   return (
-    <div className="max-w-3xl mx-auto flex flex-col mb-6">
+    <div className="max-w-3xl mx-auto flex flex-col mb-6 items-center justify-center">
       <div className="p-4 text-center">
         <h1 className="text-2xl font-bold mb-6">Professional Portfolio</h1>
       </div>
 
-      <div className="flex justify-center mb-4 gap-4">
+      <div className="mb-4 join">
         {links.map((link) => (
-          <a href={link.href} key={link.href} className="btn btn-neutral">
+          <a href={link.href} key={link.href} className="btn btn-neutral join-item">
             {link.content}
           </a>
         ))}
