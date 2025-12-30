@@ -125,12 +125,11 @@ matching for easy use.
         ))}
       </div>
 
-      <div className="max-w-3xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-4 mb-10">
+      <div className="max-w-3xl mx-auto flex flex-col gap-4 mb-10">
         {projects.map((project) => (
           <ProjectCard
             key={project.title}
             title={project.title}
-            description={project.description}
             technologies={project.technologies}
             liveLink={project.liveLink}
             sourceLink={project.githubLink}

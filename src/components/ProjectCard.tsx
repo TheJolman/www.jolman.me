@@ -1,19 +1,20 @@
+import { ComponentChildren } from 'preact';
 import Card from './Card';
 
 interface ProjectCardProps {
   title: string;
-  description: string;
   technologies: string;
   liveLink?: string;
   sourceLink?: string;
+  children?: ComponentChildren;
 }
 
 export default function ProjectCard(
-  { title, description, technologies, liveLink, sourceLink }: ProjectCardProps,
+  { title, technologies, liveLink, sourceLink, children }: ProjectCardProps,
 ) {
   return (
     <Card title={title}>
-      <p>{description}</p>
+      {children}
       <p className="text-sm italic text-base-content/70">{technologies}</p>
 
       <div className="card-actions justify-end mt-4">
@@ -24,9 +25,9 @@ export default function ProjectCard(
         )}
         {sourceLink &&
           (<a href={sourceLink} className="btn btn-primary">
-          📁 GitHub
-        </a>
-        )}
+            📁 GitHub
+          </a>
+          )}
       </div>
     </Card>
 
