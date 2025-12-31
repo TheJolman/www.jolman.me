@@ -40,11 +40,11 @@ export function About() {
                 projects (see api.acmcsuf.com on my <a className="link" href="/portfolio"> portfolio
                 </a> for more info). On top of being a lead developer, I created workshops with
                 my team and personally lead and demo'd a few in my last semester. Some
-                highlights included my personal favorite, the Advanced Git Workshop, our Inro
-                to Rust Workshop, and our GitHub Actions Workshop. All of these were designed
-                to introduce technologies and tools that would be useful to fellow student
-                developers, and to show them how powerful they can be with the problems they're
-                designed to solve.
+                highlights included my personal favorite, our <em>Advanced Git Workshop</em>, our
+                <em> Intro to Rust Workshop</em>, and our <em>GitHub Actions Workshop</em>. All of
+                these were designed to introduce technologies and tools that would be useful to
+                fellow student developers, and to show them how powerful they can be and the
+                problems they're designed to solve.
               </p>
 
               <p className="mb-4">
@@ -74,10 +74,10 @@ export function About() {
                 Finally, I've been working as an instructor at various Mathnasium
                 locations for nearly two years at this point, and I do private
                 tutoring as well when the opportunity presents itself. While not the most
-                lucrative of jobs, I truly love it as get to directly help people with
+                lucrative of jobs, I truly love it as I get to directly help people with
                 something that I enjoy. Nothing makes me happier than helping a student
                 acheive an 'aha' moment or getting them excited about a subject many see
-                as dry. I'm also hoping to start tutoring people in Copmuter Science topics, too.
+                as dry. I'm also hoping to start tutoring people in Computer Science topics, too.
               </p>
             </Card>
           </div>
