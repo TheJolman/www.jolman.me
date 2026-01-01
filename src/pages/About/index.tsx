@@ -101,7 +101,7 @@ export function About() {
               See my{" "}
               <a
                 className="link"
-                href="https://www.linkedin.com/in/joshua-holman-685a39244/"
+                href="https://www.linkedin.com/in/jolman-dot-me"
               >
                 linkedin
               </a>{" "}

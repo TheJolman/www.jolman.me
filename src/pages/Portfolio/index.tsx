@@ -7,7 +7,7 @@ export function Portfolio() {
       content: "My GitHub",
     },
     {
-      href: "https://www.linkedin.com/in/joshua-holman-685a39244/",
+      href: "https://www.linkedin.com/in/jolman-dot-me",
       content: "My Linkedin",
     },
     {
