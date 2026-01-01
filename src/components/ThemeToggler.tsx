@@ -3,7 +3,13 @@ import { themeChange } from 'theme-change';
 import { Sun, Moon } from 'lucide-preact';
 
 export function ThemeToggler() {
-  const [theme, setTheme] = useState('coffee');
+  const [theme, setTheme] = useState(() => {
+    // Initialize from localStorage or default to 'coffee'
+    if (typeof window !== 'undefined') {
+      return localStorage.getItem('theme') || 'coffee';
+    }
+    return 'coffee';
+  });
 
   useEffect(() => {
     themeChange(false)
