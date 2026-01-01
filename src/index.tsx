@@ -1,4 +1,5 @@
 import { LocationProvider, Router, Route, hydrate, prerender as ssr } from 'preact-iso';
+import { ThemeProvider } from './providers/theme-provider';
 
 import { Navbar } from './components/Navbar';
 import { Footer } from './components/Footer';
@@ -13,20 +14,22 @@ import './style.css';
 export function App() {
 	return (
 		<LocationProvider>
-			<div className="flex flex-col min-h-screen">
-				<Navbar />
-				<main className="flex-grow">
-					<Router>
-					<Route path="/" component={Home} />
-					<Route path="/portfolio" component={Portfolio} />
-					<Route path="/about" component={About} />
-					<Route path="/resume" component={Resume} />
-					<Route path="/tutoring" component={Tutoring} />
-					<Route default component={NotFound} />
-				</Router>
-				</main>
-				<Footer />
-			</div>
+			<ThemeProvider>
+				<div className="flex flex-col min-h-screen">
+					<Navbar />
+					<main className="grow">
+						<Router>
+							<Route path="/" component={Home} />
+							<Route path="/portfolio" component={Portfolio} />
+							<Route path="/about" component={About} />
+							<Route path="/resume" component={Resume} />
+							<Route path="/tutoring" component={Tutoring} />
+							<Route default component={NotFound} />
+						</Router>
+					</main>
+					<Footer />
+				</div>
+			</ThemeProvider>
 		</LocationProvider>
 	);
 }

@@ -1,5 +1,5 @@
 import { PageLinks } from "../constants/buttons";
-import { ThemeToggler } from "./ThemeToggler";
+import  ThemeToggler  from "./ThemeToggler";
 
 export function Navbar() {
   return (
