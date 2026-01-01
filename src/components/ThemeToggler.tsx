@@ -1,8 +1,9 @@
 import { useTheme } from '../providers/theme-provider';
+import { isDarkTheme, toggleTheme } from '../config/themes';
 
 export default function ThemeToggler() {
   const { theme, setTheme } = useTheme();
-  const isDark = theme === 'coffee';
+  const isDark = isDarkTheme(theme);
 
   return (
     <button
@@ -11,7 +12,7 @@ export default function ThemeToggler() {
       aria-pressed={isDark}
       aria-label="Toggle color theme"
       title="Toggle color theme"
-      onClick={() => setTheme(isDark ? 'caramellatte' : 'coffee')}
+      onClick={() => setTheme(toggleTheme(theme))}
     >
       <span className="inline-flex items-center gap-2">
         <svg aria-hidden viewBox="0 0 24 24" className="size-5">

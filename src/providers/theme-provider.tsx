@@ -1,7 +1,7 @@
 import { createContext } from 'preact';
 import { useContext, useEffect, useMemo, useState } from 'preact/hooks';
+import { THEMES, type Theme, isValidTheme } from '../config/themes';
 
-export type Theme = 'caramellatte' | 'coffee'
 const THEME_KEY = 'vite-ui-theme';
 
 type ThemeProviderState = {
@@ -26,17 +26,17 @@ export function ThemeProvider({
 }) {
   const [theme, setThemeState] = useState<Theme>(() => {
     if (!canUseDOM()) {
-      return defaultTheme === 'system' ? 'caramellatte' : (defaultTheme as Theme);
+      return defaultTheme === 'system' ? THEMES.light : (defaultTheme as Theme);
     }
     try {
       const saved = localStorage.getItem(storageKey) as Theme | null;
-      if (saved === 'caramellatte' || saved === 'coffee') return saved;
+      if (saved && isValidTheme(saved)) return saved;
       if (defaultTheme === 'system') {
-        return window.matchMedia('(prefers-color-scheme: coffee)').matches ? 'coffee' : 'caramellatte';
+        return window.matchMedia('(prefers-color-scheme: dark)').matches ? THEMES.dark : THEMES.light;
       }
       return defaultTheme as Theme;
     } catch {
-      return defaultTheme === 'system' ? 'caramellatte' : (defaultTheme as Theme);
+      return defaultTheme === 'system' ? THEMES.light : (defaultTheme as Theme);
     }
   });
 
@@ -51,7 +51,7 @@ export function ThemeProvider({
   useEffect(() => {
     if (!canUseDOM()) return;
     const onStorage = (e: StorageEvent) => {
-      if (e.key === storageKey && (e.newValue === 'caramellatte' || e.newValue === 'coffee'))
+      if (e.key === storageKey && e.newValue && isValidTheme(e.newValue))
         setThemeState(e.newValue);
     };
     window.addEventListener('storage', onStorage);
