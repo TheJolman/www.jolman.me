@@ -34,11 +34,11 @@ export function About() {
             associate degrees: Mathematics and General Studies w/ emphpasis in
             Physical Sciences. After five semesters I had fully transferred to
             CSU Fullerton where I earned a BS in Computer Science with a minor in Math.
-            I was a board member of my schools ACM chapter where I lead one of our open-source
+            I was a board member of my school's ACM chapter where I led one of our open-source
             projects (see api.acmcsuf.com on my <a className="link" href="/portfolio"> portfolio
             </a> for more info). On top of being a lead developer, I created workshops with
             my team and personally lead and demo'd a few in my last semester. Some
-            highlights included my personal favorite, our <em>Advanced Git Workshop</em>, our
+            highlights included my personal favorite, our <em>Advanced Git Workshop</em>, as well as our
             <em> Intro to Rust Workshop</em>, and our <em>GitHub Actions Workshop</em>. All of
             these were designed to introduce technologies and tools that would be useful to
             fellow student developers, and to show them how powerful they can be and the
@@ -52,9 +52,9 @@ export function About() {
               href="https://github.com/thejolman/.dotfiles"
             >
               rice
-            </a>) and generally into tech. I enjoy self-hosting things on my
-            home server, writing code, and optimizing my development workflow. While I
-            can't call myself a hardware engineer, I enjoy tinkering with physical
+            </a>) and into tech. I enjoy self-hosting things on my
+            home server, writing code, and optimizing my development workflow. I also enjoy
+            tinkering with physical
             hardware, and fixing or upgrading devices when I can. My home server functions
             as a file upload and storage server (currently uses SFTP, might add Samba
             support as well) and of course a Minecraft server for my friends and I.
@@ -71,23 +71,23 @@ export function About() {
           <p className="">
             Finally, I've been working as an instructor at various Mathnasium
             locations for nearly two years at this point, and I do private
-            tutoring as well when the opportunity presents itself. While not the most
-            lucrative of jobs, I truly love it as I get to directly help people with
+            tutoring as well when the opportunity presents itself. I truly enjoy tutoring as I
+            get to directly help people with
             something that I enjoy. Nothing makes me happier than helping a student
-            acheive an 'aha' moment or getting them excited about a subject many see
-            as dry. I'm also hoping to start tutoring people in Computer Science topics, too.
+            acheive an "aha" moment or getting them excited about a subject many see
+            as dry. I also plan to start tutoring people in Computer Science topics, too.
           </p>
         </Card>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
           <Card title="Interests">
             <ul className="space-y-2">
-              <li>• Programming of all kinds (but mostly server-side stuff)</li>
-              <li>• System administration and DevOps</li>
+              <li>• Programming of all kinds (but mostly server-side)</li>
+              <li>• System Administration and DevOps</li>
               <li>• Math</li>
               <li>• Reading and Music</li>
               <li>• Fitness</li>
-              <li>• Helping others 😁</li>
+              <li>• Helping others acheive their goals</li>
             </ul>
           </Card>
 
