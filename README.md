@@ -1,20 +1,21 @@
 # [www.jolman.me](https://www.jolman.me)
 
 ## Welcome to my site's source!
+This is a mostly static SPA that contains my main website :)
 
 ### Tech Stack:
-- Preact
-- preact-iso for client-side routing
+- Preact + preact-iso
 - Vite
+- Bun
 - Vercel
 
-## Getting Started
+## Usage
 
--   `pnpm dev` - Starts a dev server at http://localhost:5173/
+-   `bun dev` - Starts a dev server at http://localhost:5173/
 
--   `pnpm build` - Builds for production, emitting to `dist/`. Prerenders all found routes in app to static HTML
+-   `bun build` - Builds for production, emitting to `dist/`. Prerenders all found routes in app to static HTML
 
--   `pnpm preview` - Starts a server at http://localhost:4173/ to test production build locally
+-   `bun preview` - Starts a server at http://localhost:4173/ to test production build locally
 
 ---
 
