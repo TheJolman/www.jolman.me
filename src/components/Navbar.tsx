@@ -1,5 +1,5 @@
 import { PageLinks } from "../constants/buttons";
-import { ThemeToggler } from "./ThemeToggler";
+import ThemeToggler from "./ThemeToggler";
 
 export function Navbar() {
   return (
@@ -11,16 +11,14 @@ export function Navbar() {
       </div>
 
       <div className="navbar-center hidden lg:flex">
-        <ul className="menu menu-horizontal px-1">
+        <ul className="menu menu-horizontal px-1 join">
           {PageLinks.map((button) => (
-            <li key={button.href}>
-              <a href={button.href}>{button.content}</a>
-            </li>
+            <a className="btn btn-ghost join-item" href={button.href}>{button.content}</a>
           ))}
         </ul>
       </div>
 
-      <div className="navbar-end">
+      <div className="navbar-end gap-1">
         <ThemeToggler />
         <div className="dropdown dropdown-end">
           <label tabIndex={0} className="btn btn-ghost lg:hidden">
