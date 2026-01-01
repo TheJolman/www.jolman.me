@@ -2,7 +2,7 @@
 
 @plugin 'daisyui' {
 	themes:
-		all;
-	/* caramellatte --default, */
-	/* coffee --prefersdark; */
+		/* all; */
+		caramellatte --default,
+		coffee --prefersdark;
 }
