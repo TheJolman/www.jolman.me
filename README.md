@@ -5,6 +5,7 @@ This is a mostly static SPA that contains my main website :)
 
 ### Tech Stack:
 - Preact + preact-iso
+- Tailwind + daisyUI
 - Vite
 - Bun
 - Vercel
