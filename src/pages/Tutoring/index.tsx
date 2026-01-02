@@ -40,6 +40,7 @@ export function Tutoring() {
             <span className="font-semibold">$35/hour</span>{" "}
             for extended sessions
           </p>
+          <em>Travel expenses may apply</em>
         </Card>
 
         <Card title="Topics Offered">
