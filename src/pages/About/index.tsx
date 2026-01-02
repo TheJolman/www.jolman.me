@@ -37,7 +37,7 @@ export function About() {
             I was a board member of my school's ACM chapter where I led one of our open-source
             projects (see api.acmcsuf.com on my <a className="link" href="/portfolio"> portfolio
             </a> for more info). On top of being a lead developer, I created workshops with
-            my team and personally lead and demo'd a few in my last semester. Some
+            my team and personally led and demo'd a few in my last semester. Some
             highlights included my personal favorite, our <em>Advanced Git Workshop</em>, as well as our
             <em> Intro to Rust Workshop</em>, and our <em>GitHub Actions Workshop</em>. All of
             these were designed to introduce technologies and tools that would be useful to
