@@ -1,4 +1,4 @@
-import asciiArt from '../../assets/computer.txt';
+import asciiArt from '../../assets/cat_box.txt';
 import { useState, useEffect } from 'preact/hooks';
 import './style.css';
 
@@ -23,8 +23,8 @@ export function Home() {
   return (
     <div className="hero min-h-screen">
       <div className="hero-content flex-col lg:flex-row w-full px-4 lg:px-8">
-        <div className="mockup-code shadow-2xl w-full lg:w-auto max-w-full overflow-x-auto">
-          <pre data-prefix="❯"><span className="text-primary">nix run</span> github:thejolman/www.jolman.me#art</pre>
+        <div className="mockup-code shadow-2xl lg:w-auto overflow-x-auto">
+          <pre data-prefix="❯"><span className="text-primary">nix run</span> github:thejolman/art</pre>
           <br />
           <div className="px-4 sm:px-10 overflow-x-auto">
             <AsciiLoader />
@@ -36,7 +36,7 @@ export function Home() {
           <p className="py-6 text-sm sm:text-base">
             I'm <b>Josh Holman</b>, a software developer and tutor.
             <br />
-            Also an Open-source contributor and recent grad from CSU, Fullerton.
+            I'm also an Open-source contributor and recent grad from CSU, Fullerton.
             <br />
             Currently looking for work in back-end SWE and DevOps.
           </p>
