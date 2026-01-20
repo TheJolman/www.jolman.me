@@ -22,18 +22,18 @@ const AsciiLoader = () => {
 export function Home() {
   return (
     <div className="hero min-h-screen">
-      <div className="hero-content flex-col lg:flex-row">
-        <div className="mockup-code mx-3 shadow-2xl">
+      <div className="hero-content flex-col lg:flex-row w-full px-4 lg:px-8">
+        <div className="mockup-code shadow-2xl w-full lg:w-auto max-w-full overflow-x-auto">
           <pre data-prefix="❯"><span className="text-primary">nix run</span> github:thejolman/www.jolman.me#art</pre>
           <br />
-          <div className="px-10">
+          <div className="px-4 sm:px-10 overflow-x-auto">
             <AsciiLoader />
           </div>
           <pre data-prefix="❯" className="animate-blink"></pre>
         </div>
-        <div className="text-center">
-          <h1 className="text-5xl font-bold">Welcome to my site</h1>
-          <p className="py-6">
+        <div className="text-center lg:text-left max-w-xl">
+          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold">Welcome to my site</h1>
+          <p className="py-6 text-sm sm:text-base">
             I'm <b>Josh Holman</b>, a software developer and tutor.
             <br />
             Also an Open-source contributor and recent grad from CSU, Fullerton.
