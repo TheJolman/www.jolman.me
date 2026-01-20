@@ -29,7 +29,7 @@ export function Home() {
           </div>
           <pre data-prefix="❯" className="animate-blink"></pre>
         </div>
-        <div className="text-center lg:text-left max-w-xl">
+        <div className="text-center max-w-xl">
           <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold">Welcome to my site</h1>
           <p className="py-6 text-sm sm:text-base">
             I'm <b>Josh Holman</b>, a software developer and tutor.
