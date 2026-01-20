@@ -13,9 +13,7 @@ const AsciiLoader = () => {
   });
 
   return (
-    <pre>
-      <code>{art}</code>
-    </pre>
+    <pre><code>{art}</code></pre>
   )
 }
 
