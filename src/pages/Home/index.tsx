@@ -1,33 +1,39 @@
-import { PageLinks } from "../../constants/buttons";
+import asciiArt  from '../../assets/computer.txt';
+import { useState, useEffect } from 'preact/hooks';
+
+const AsciiLoader = () => {
+  const [art, setArt] = useState('');
+
+  useEffect(() => {
+    fetch(asciiArt)
+      .then((response) => response.text())
+      .then((data) => setArt(data))
+      .catch((error) => console.error('Could not fetch ASCII art:', error));
+  });
+
+  return (
+    <pre className="font-mono leading-5">
+      {art}
+    </pre>
+  )
+}
 
 export function Home() {
   return (
-    <>
-      <head>
-        <title>Josh Holman - CS Student & Math Tutor</title>
-      </head>
-      <div className="hero min-h-[calc(100vh-10rem)]">
-        <div className="hero-content text-center">
-          <div className="max-w-md">
-            <h1 className="text-5xl font-bold">Hello there</h1>
-            <p className="py-6">
-              I'm Josh Holman, a software developer
-              and tutor. Welcome to my site.
-            </p>
-            <div className="flex flex-col items-center join join-vertical">
-              {PageLinks.map((button) => (
-                <a
-                  href={button.href}
-                  className="btn btn-primary btn-wide join-item shadow-xl border-base-300 border"
-                  key={button.href}
-                >
-                  {button.content}
-                </a>
-              ))}
-            </div>
-          </div>
+    <div className="hero min-h-screen">
+      <div className="hero-content flex-col lg:flex-row text-center">
+        <AsciiLoader />
+        <div>
+          <h1 className="text-5xl font-bold">Hello there</h1>
+          <p className="py-6">
+            I'm <b>Josh Holman</b>, a software developer and tutor.
+            <br />
+            I'm an open-source contributor and recent graduate from CSU, Fullerton.
+            <br />
+            Currently looking for work in back-end SWE and DevOps.
+          </p>
         </div>
       </div>
-    </>
+    </div>
   );
 }
