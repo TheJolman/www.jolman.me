@@ -12,8 +12,8 @@ const AsciiLoader = () => {
   });
 
   return (
-    <pre className="font-mono leading-5">
-      {art}
+    <pre>
+      <code>{art}</code>
     </pre>
   )
 }
@@ -21,16 +21,20 @@ const AsciiLoader = () => {
 export function Home() {
   return (
     <div className="hero min-h-screen">
-      <div className="hero-content flex-col lg:flex-row text-center">
-        <div className="bg-base-200 text-primary p-4 rounded-2xl shadow-2xl">
-          <AsciiLoader />
+      <div className="hero-content flex-col lg:flex-row">
+        <div className="mockup-code mx-3">
+          <pre data-prefix="$"><span className="text-primary">nix run</span> github:thejolman/www.jolman.me#art</pre>
+          <br />
+          <div className="px-10">
+            <AsciiLoader />
+          </div>
         </div>
-        <div>
+        <div className="text-center">
           <h1 className="text-5xl font-bold">Hello there</h1>
           <p className="py-6">
             I'm <b>Josh Holman</b>, a software developer and tutor.
             <br />
-            I'm an open-source contributor and recent graduate from CSU, Fullerton.
+            Also an Open-source contributor and recent grad from CSU, Fullerton.
             <br />
             Currently looking for work in back-end SWE and DevOps.
           </p>
