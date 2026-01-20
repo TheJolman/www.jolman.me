@@ -22,8 +22,8 @@ export function Home() {
   return (
     <div className="hero min-h-screen">
       <div className="hero-content flex-col lg:flex-row">
-        <div className="mockup-code mx-3">
-          <pre data-prefix="$"><span className="text-primary">nix run</span> github:thejolman/www.jolman.me#art</pre>
+        <div className="mockup-code mx-3 shadow-2xl">
+          <pre data-prefix="❯"><span className="text-primary">nix run</span> github:thejolman/www.jolman.me#art</pre>
           <br />
           <div className="px-10">
             <AsciiLoader />
