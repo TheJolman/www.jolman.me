@@ -1,4 +1,4 @@
-import asciiArt  from '../../assets/computer.txt';
+import asciiArt from '../../assets/computer.txt';
 import { useState, useEffect } from 'preact/hooks';
 
 const AsciiLoader = () => {
@@ -22,7 +22,9 @@ export function Home() {
   return (
     <div className="hero min-h-screen">
       <div className="hero-content flex-col lg:flex-row text-center">
-        <AsciiLoader />
+        <div className="bg-base-200 text-primary p-4 rounded-2xl shadow-2xl">
+          <AsciiLoader />
+        </div>
         <div>
           <h1 className="text-5xl font-bold">Hello there</h1>
           <p className="py-6">
