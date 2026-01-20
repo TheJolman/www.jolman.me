@@ -30,7 +30,7 @@ export function Home() {
           </div>
         </div>
         <div className="text-center">
-          <h1 className="text-5xl font-bold">Hello there</h1>
+          <h1 className="text-5xl font-bold">Welcome to my site</h1>
           <p className="py-6">
             I'm <b>Josh Holman</b>, a software developer and tutor.
             <br />
