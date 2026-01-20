@@ -1,5 +1,6 @@
 import asciiArt from '../../assets/computer.txt';
 import { useState, useEffect } from 'preact/hooks';
+import './style.css';
 
 const AsciiLoader = () => {
   const [art, setArt] = useState('');
@@ -28,6 +29,7 @@ export function Home() {
           <div className="px-10">
             <AsciiLoader />
           </div>
+          <pre data-prefix="❯" className="animate-blink"></pre>
         </div>
         <div className="text-center">
           <h1 className="text-5xl font-bold">Welcome to my site</h1>
