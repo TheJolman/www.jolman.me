@@ -10,6 +10,7 @@
 		"check": "biome check"
 	},
 	"dependencies": {
+		"@preact/signals": "^2.9.0",
 		"@tailwindcss/vite": "^4.1.17",
 		"github-markdown-css": "^5.8.1",
 		"lucide-preact": "^0.548.0",
