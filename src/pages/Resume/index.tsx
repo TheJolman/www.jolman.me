@@ -18,15 +18,16 @@ export function Resume() {
   }
 
   return (
-    <div className="max-w-3xl mx-auto flex flex-col items-center mb-6">
-      <div className="flex justify-center my-4">
+    <div className="max-w-3xl mx-auto flex flex-col items-center my-6 gap-4">
+      <div className="flex flex-col text-center gap-4">
+        <h1 className="text-2xl font-bold">Résumé</h1>
         <a
           href="https://github.com/TheJolman/resume/raw/main/resume.pdf"
           className="btn btn-neutral"
           target="_blank"
           rel="noopener noreferrer"
         >
-          PDF Version
+          Open as PDF
         </a>
       </div>
       <main className="resume-container">
