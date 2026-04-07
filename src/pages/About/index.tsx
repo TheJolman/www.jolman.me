@@ -5,26 +5,16 @@ export function About() {
   return (
     <div className="max-w-3xl mx-auto flex flex-col items-center my-6 gap-4">
       <h1 className="text-2xl font-bold">About Me</h1>
+      <div className="avatar">
+        <div className="w-80 rounded-xl shadow-200 shadow-xl border border-base-300">
+          <img
+            src={profilePic}
+            alt="Josh Holman"
+          />
+        </div>
+      </div>
 
       <div className="w-full max-w-3xl mx-auto flex flex-col gap-4">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          <div className="avatar flex justify-center md:justify-start">
-            <div className="w-80 rounded-xl shadow-200 shadow-xl border border-base-300">
-              <img
-                src={profilePic}
-                alt="Josh Holman"
-              />
-            </div>
-          </div>
-
-          <Card title="Hi! I'm a Computer Science graduate and tutor from Torrance, California">
-            <p>
-              I'm currently looking for work in DevOps, Software Engineering, or other
-              technical field.
-            </p>
-          </Card>
-        </div>
-
         <Card title="Background">
           <p className="mb-4">
             I first attended college at El Camino Community College in
