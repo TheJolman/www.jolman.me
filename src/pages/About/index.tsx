@@ -3,10 +3,8 @@ import Card from '../../components/Card';
 
 export function About() {
   return (
-    <div className="max-w-3xl mx-auto flex flex-col items-center justify-center mb-6">
-      <div className="p-4 text-center">
-        <h1 className="text-2xl font-bold mb-6">About Me</h1>
-      </div>
+    <div className="max-w-3xl mx-auto flex flex-col items-center justify-center my-6 gap-4">
+      <h1 className="text-2xl font-bold">About Me</h1>
 
       <div className="w-full max-w-3xl mx-auto flex flex-col gap-4">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
