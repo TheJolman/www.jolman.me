@@ -48,7 +48,7 @@ export function Portfolio() {
   ];
 
   return (
-    <div className="max-w-3xl mx-auto flex flex-col my-6 items-center justify-center gap-6">
+    <div className="max-w-3xl mx-auto flex flex-col my-6 items-center gap-6">
       <div className="flex flex-col text-center gap-4">
         <h1 className="text-2xl font-bold">Professional Portfolio</h1>
         <div className="join">

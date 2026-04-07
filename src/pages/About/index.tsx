@@ -3,7 +3,7 @@ import Card from '../../components/Card';
 
 export function About() {
   return (
-    <div className="max-w-3xl mx-auto flex flex-col items-center justify-center my-6 gap-4">
+    <div className="max-w-3xl mx-auto flex flex-col items-center my-6 gap-4">
       <h1 className="text-2xl font-bold">About Me</h1>
 
       <div className="w-full max-w-3xl mx-auto flex flex-col gap-4">
