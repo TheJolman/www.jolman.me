@@ -20,7 +20,7 @@ const AsciiLoader = () => {
 
 export function Home() {
   return (
-    <div className="hero min-h-screen">
+    <div className="hero grow">
       <div className="hero-content flex-col lg:flex-row w-full px-4 lg:px-8 gap-10">
         <div className="mockup-code shadow-xl lg:w-auto overflow-x-auto">
           <pre data-prefix="❯"><span className="text-primary">nix run</span> github:thejolman/art</pre>
