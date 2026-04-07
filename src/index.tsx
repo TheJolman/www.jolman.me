@@ -17,7 +17,7 @@ export function App() {
 			<ThemeProvider>
 				<div className="flex flex-col min-h-screen">
 					<Navbar />
-					<main className="grow">
+					<main className="grow flex">
 						<Router>
 							<Route path="/" component={Home} />
 							<Route path="/portfolio" component={Portfolio} />
