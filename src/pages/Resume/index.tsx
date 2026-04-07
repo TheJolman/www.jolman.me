@@ -1,19 +1,19 @@
 import Card from '../../components/Card'
-import { useState, useEffect } from 'preact/hooks';
+import { signal } from '@preact/signals';
 import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
 import './style.css';
 
+const markdownSignal = signal('')
+fetch('https://raw.githubusercontent.com/TheJolman/resume/main/resume.md')
+  .then((response) => response.text())
+  .then((text) => {
+    markdownSignal.value = text;
+  })
+  .catch((error) => console.error('Failed to fetch resume source:' + error));
+
 export function Resume() {
-  const [markdown, setMarkdown] = useState('');
-
-  useEffect(() => {
-    fetch('https://raw.githubusercontent.com/TheJolman/resume/main/resume.md')
-      .then((response) => response.text())
-      .then((text) => setMarkdown(text));
-  }, []);
-
-  if (!markdown) {
+  if (!markdownSignal) {
     return <p className="m-5">Fetching my most recent resume...</p>
   }
 
@@ -32,7 +32,7 @@ export function Resume() {
       </div>
       <main className="resume-container">
         <Card>
-          <ReactMarkdown remarkPlugins={[remarkGfm]}>{markdown}</ReactMarkdown>
+          <ReactMarkdown remarkPlugins={[remarkGfm]}>{markdownSignal.value}</ReactMarkdown>
         </Card>
       </main>
     </div>

@@ -1,22 +1,16 @@
 import asciiArt from '../../assets/cat_box.txt';
-import { useState, useEffect } from 'preact/hooks';
 import Card from '../../components/Card';
+import { signal } from '@preact/signals';
 import './style.css';
 
-const AsciiLoader = () => {
-  const [art, setArt] = useState('');
+const artSignal = signal('');
 
-  useEffect(() => {
-    fetch(asciiArt)
-      .then((response) => response.text())
-      .then((data) => setArt(data))
-      .catch((error) => console.error('Could not fetch ASCII art:', error));
-  });
-
-  return (
-    <pre><code>{art}</code></pre>
-  )
-}
+fetch(asciiArt)
+  .then((response) => response.text())
+  .then((data) => {
+    artSignal.value = data;
+  })
+  .catch((error) => console.error('Could not fetch homepage art:', error));
 
 export function Home() {
   return (
@@ -26,7 +20,7 @@ export function Home() {
           <pre data-prefix="❯"><span className="text-primary">nix run</span> github:thejolman/art</pre>
           <br />
           <div className="px-4 sm:px-10 overflow-x-auto">
-            <AsciiLoader />
+            <pre><code>{artSignal}</code></pre>
           </div>
           <pre data-prefix="❯" className="animate-blink"></pre>
         </div>
