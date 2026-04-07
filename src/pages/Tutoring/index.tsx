@@ -2,10 +2,10 @@ import Card from '../../components/Card';
 
 export function Tutoring() {
   return (
-    <div className="max-w-3xl mx-auto flex flex-col items-center justify-center mb-6">
-      <div className="p-4 text-center">
-        <h1 className="text-2xl font-bold mb-6">Tutoring Services</h1>
-        <p className="font-bold mb-6">
+    <div className="max-w-3xl mx-auto flex flex-col items-center my-6 gap-4">
+      <div className="flex flex-col text-center gap-4">
+        <h1 className="text-2xl font-bold">Tutoring Services</h1>
+        <p>
           I offer private math and computer science tutoring with flexible scheduling and
           personalized instruction.
         </p>
