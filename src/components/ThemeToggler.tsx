@@ -1,5 +1,5 @@
-import { useTheme } from '../providers/theme-provider';
-import { isDarkTheme, toggleTheme } from '../config/themes';
+import { isDarkTheme, toggleTheme } from "../config/themes";
+import { useTheme } from "../providers/theme-provider";
 
 export default function ThemeToggler() {
   const { theme, setTheme } = useTheme();
@@ -16,7 +16,14 @@ export default function ThemeToggler() {
     >
       <span className="inline-flex items-center gap-2">
         <svg aria-hidden viewBox="0 0 24 24" className="size-5">
-          <g stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round" strokeLinejoin="round">
+          <title>{isDark ? "Dark theme icon" : "Light theme icon"}</title>
+          <g
+            stroke="currentColor"
+            strokeWidth="2"
+            fill="none"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+          >
             {isDark ? (
               <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z" />
             ) : (
@@ -27,7 +34,8 @@ export default function ThemeToggler() {
             )}
           </g>
         </svg>
-        <span className="hidden md:inline">{isDark ? 'Dark' : 'Light'}</span>
+        <span className="hidden md:inline">{isDark ? "Dark" : "Light"}</span>
       </span>
-    </button>)
+    </button>
+  );
 }

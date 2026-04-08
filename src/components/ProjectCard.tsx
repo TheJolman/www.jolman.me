@@ -1,5 +1,5 @@
-import { ComponentChildren } from 'preact';
-import Card from './Card';
+import type { ComponentChildren } from "preact";
+import Card from "./Card";
 
 interface ProjectCardProps {
   title: string;
@@ -9,9 +9,13 @@ interface ProjectCardProps {
   children?: ComponentChildren;
 }
 
-export default function ProjectCard(
-  { title, technologies, liveLink, sourceLink, children }: ProjectCardProps,
-) {
+export default function ProjectCard({
+  title,
+  technologies,
+  liveLink,
+  sourceLink,
+  children,
+}: ProjectCardProps) {
   return (
     <Card title={title}>
       {children}
@@ -23,14 +27,12 @@ export default function ProjectCard(
             🌐 Visit Site
           </a>
         )}
-        {sourceLink &&
-          (<a href={sourceLink} className="btn btn-primary">
+        {sourceLink && (
+          <a href={sourceLink} className="btn btn-primary">
             📁 GitHub
           </a>
-          )}
+        )}
       </div>
     </Card>
-
-
-  )
+  );
 }

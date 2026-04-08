@@ -35,7 +35,7 @@
 }
 
 /* Contact info at the top */
-.resume-container h1+p {
+.resume-container h1 + p {
   text-align: center;
   font-size: 0.9em;
 }

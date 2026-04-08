@@ -1,51 +1,55 @@
-import { createContext } from 'preact';
-import { useContext, useEffect, useMemo, useState } from 'preact/hooks';
-import { THEMES, type Theme, isValidTheme } from '../config/themes';
+import { createContext } from "preact";
+import { useContext, useEffect, useMemo, useState } from "preact/hooks";
+import { isValidTheme, THEMES, type Theme } from "../config/themes";
 
-const THEME_KEY = 'vite-ui-theme';
+const THEME_KEY = "vite-ui-theme";
 
 type ThemeProviderState = {
   theme: Theme;
   setTheme: (next: Theme) => void;
-}
+};
 
-const ThemeProviderContext = createContext<ThemeProviderState | undefined>(undefined);
+const ThemeProviderContext = createContext<ThemeProviderState | undefined>(
+  undefined,
+);
 
 function canUseDOM() {
-  return typeof window !== 'undefined' && typeof document !== 'undefined';
+  return typeof window !== "undefined" && typeof document !== "undefined";
 }
 
 export function ThemeProvider({
   children,
-  defaultTheme = 'system',
+  defaultTheme = "system",
   storageKey = THEME_KEY,
 }: {
   children: preact.ComponentChildren;
-  defaultTheme?: Theme | 'system';
+  defaultTheme?: Theme | "system";
   storageKey?: string;
 }) {
   const [theme, setThemeState] = useState<Theme>(() => {
     if (!canUseDOM()) {
-      return defaultTheme === 'system' ? THEMES.light : (defaultTheme as Theme);
+      return defaultTheme === "system" ? THEMES.light : (defaultTheme as Theme);
     }
     try {
       const saved = localStorage.getItem(storageKey) as Theme | null;
       if (saved && isValidTheme(saved)) return saved;
-      if (defaultTheme === 'system') {
-        return window.matchMedia('(prefers-color-scheme: dark)').matches ? THEMES.dark : THEMES.light;
+      if (defaultTheme === "system") {
+        return window.matchMedia("(prefers-color-scheme: dark)").matches
+          ? THEMES.dark
+          : THEMES.light;
       }
       return defaultTheme as Theme;
     } catch {
-      return defaultTheme === 'system' ? THEMES.light : (defaultTheme as Theme);
+      return defaultTheme === "system" ? THEMES.light : (defaultTheme as Theme);
     }
   });
 
   useEffect(() => {
     if (!canUseDOM()) return;
-    document.documentElement.setAttribute('data-theme', theme);
+    document.documentElement.setAttribute("data-theme", theme);
     try {
       localStorage.setItem(storageKey, theme);
-    } catch { }
+    } catch {}
   }, [theme, storageKey]);
 
   useEffect(() => {
@@ -54,8 +58,8 @@ export function ThemeProvider({
       if (e.key === storageKey && e.newValue && isValidTheme(e.newValue))
         setThemeState(e.newValue);
     };
-    window.addEventListener('storage', onStorage);
-    return () => window.removeEventListener('storage', onStorage);
+    window.addEventListener("storage", onStorage);
+    return () => window.removeEventListener("storage", onStorage);
   }, [storageKey]);
 
   const setTheme = (next: Theme) => setThemeState(next);
@@ -71,6 +75,6 @@ export function ThemeProvider({
 
 export function useTheme() {
   const ctx = useContext(ThemeProviderContext);
-  if (!ctx) throw new Error('useTheme must be used within a ThemeProvider');
+  if (!ctx) throw new Error("useTheme must be used within a ThemeProvider");
   return ctx;
 }

@@ -1,4 +1,4 @@
-import Card from '../../components/Card';
+import Card from "../../components/Card";
 
 export function Tutoring() {
   return (
@@ -6,8 +6,8 @@ export function Tutoring() {
       <div className="flex flex-col text-center gap-4">
         <h1 className="text-2xl font-bold">Tutoring Services</h1>
         <p>
-          I offer private math and computer science tutoring with flexible scheduling and
-          personalized instruction.
+          I offer private math and computer science tutoring with flexible
+          scheduling and personalized instruction.
         </p>
       </div>
 
@@ -15,19 +15,14 @@ export function Tutoring() {
         <Card title="Contact & Availability">
           <p className="mb-2">
             For availability and scheduling, please reach out to me at:&nbsp;
-            <a
-              href="mailto:tutoring@jolman.me"
-              className="link"
-            >
+            <a href="mailto:tutoring@jolman.me" className="link">
               tutoring@jolman.me
             </a>
             &nbsp;or&nbsp;
-            <a
-              href="tel:+13239170915"
-              className="link"
-            >
+            <a href="tel:+13239170915" className="link">
               call/text (323) 917-0915
-            </a>.
+            </a>
+            .
             <br />
             Please provide grade level and name/author/edition of textbook if
             applicable.
@@ -37,8 +32,8 @@ export function Tutoring() {
             <span className="font-semibold">$35</span> for sessions up to 1 hour
           </p>
           <p>
-            <span className="font-semibold">$35/hour</span>{" "}
-            for extended sessions
+            <span className="font-semibold">$35/hour</span> for extended
+            sessions
           </p>
           <em>Travel expenses may apply</em>
         </Card>
@@ -62,7 +57,9 @@ export function Tutoring() {
           </h3>
           <ul className="text-sm space-y-1">
             <li>• Introductory & intermediate general programming</li>
-            <li>• Linux, intro to system administration, and the command line</li>
+            <li>
+              • Linux, intro to system administration, and the command line
+            </li>
             <li>• Back-end web programming</li>
             <li>• Programming for mathematics</li>
             <li>• Basic web design</li>

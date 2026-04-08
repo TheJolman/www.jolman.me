@@ -3,7 +3,8 @@ export function Footer() {
     <footer className="footer footer-center footer-vertical p-4 bg-base-300">
       <aside>
         <p>
-          Copyright @ {new Date().getFullYear()} - All rights reserved by Josh Holman
+          Copyright @ {new Date().getFullYear()} - All rights reserved by Josh
+          Holman
         </p>
         <a
           href="https://github.com/thejolman/www.jolman.me"
@@ -15,5 +16,5 @@ export function Footer() {
         </a>
       </aside>
     </footer>
-  )
+  );
 }

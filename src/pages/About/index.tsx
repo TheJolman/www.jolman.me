@@ -1,5 +1,5 @@
-import profilePic from '../../assets/profile.jpg';
-import Card from '../../components/Card';
+import profilePic from "../../assets/profile.jpg";
+import Card from "../../components/Card";
 
 export function About() {
   return (
@@ -7,63 +7,65 @@ export function About() {
       <h1 className="text-2xl font-bold">About Me</h1>
       <div className="avatar">
         <div className="w-80 rounded-xl shadow-200 shadow-xl border border-base-300">
-          <img
-            src={profilePic}
-            alt="Josh Holman"
-          />
+          <img src={profilePic} alt="Josh Holman" />
         </div>
       </div>
 
       <div className="w-full max-w-3xl mx-auto flex flex-col gap-4">
         <Card title="Background">
           <p className="mb-4">
-            I first attended college at El Camino Community College in
-            Torrance, CA. There I played collegiate tennis and earned two
-            associate degrees: Mathematics and General Studies w/ emphpasis in
-            Physical Sciences. After five semesters I had fully transferred to
-            CSU Fullerton where I earned a BS in Computer Science with a minor in Math.
-            I was a board member of my school's ACM chapter where I led one of our open-source
-            projects (see api.acmcsuf.com on my <a className="link" href="/portfolio"> portfolio
-            </a> for more info). On top of being a lead developer, I created workshops with
-            my team and personally led and demo'd a few in my last semester. Some
-            highlights included my personal favorite, our <em>Advanced Git Workshop</em>, as well as our
-            <em> Intro to Rust Workshop</em>, and our <em>GitHub Actions Workshop</em>. All of
-            these were designed to introduce technologies and tools that would be useful to
-            fellow student developers, and to show them how powerful they can be and the
-            problems they're designed to solve.
+            I first attended college at El Camino Community College in Torrance,
+            CA. There I played collegiate tennis and earned two associate
+            degrees: Mathematics and General Studies w/ emphpasis in Physical
+            Sciences. After five semesters I had fully transferred to CSU
+            Fullerton where I earned a BS in Computer Science with a minor in
+            Math. I was a board member of my school's ACM chapter where I led
+            one of our open-source projects (see api.acmcsuf.com on my{" "}
+            <a className="link" href="/portfolio">
+              {" "}
+              portfolio
+            </a>{" "}
+            for more info). On top of being a lead developer, I created
+            workshops with my team and personally led and demo'd a few in my
+            last semester. Some highlights included my personal favorite, our{" "}
+            <em>Advanced Git Workshop</em>, as well as our
+            <em> Intro to Rust Workshop</em>, and our{" "}
+            <em>GitHub Actions Workshop</em>. All of these were designed to
+            introduce technologies and tools that would be useful to fellow
+            student developers, and to show them how powerful they can be and
+            the problems they're designed to solve.
           </p>
 
           <p className="mb-4">
             I'm a huge Linux enthusiast (take a look at my{" "}
-            <a
-              className="link"
-              href="https://github.com/thejolman/.dotfiles"
-            >
+            <a className="link" href="https://github.com/thejolman/.dotfiles">
               rice
-            </a>) and into tech. I enjoy self-hosting things on my
-            home server, writing code, and optimizing my development workflow. I also enjoy
-            tinkering with physical
-            hardware, and fixing or upgrading devices when I can. My home server functions
-            as a file upload and storage server (currently uses SFTP, might add Samba
-            support as well) and of course a Minecraft server for my friends and I.
+            </a>
+            ) and into tech. I enjoy self-hosting things on my home server,
+            writing code, and optimizing my development workflow. I also enjoy
+            tinkering with physical hardware, and fixing or upgrading devices
+            when I can. My home server functions as a file upload and storage
+            server (currently uses SFTP, might add Samba support as well) and of
+            course a Minecraft server for my friends and I.
           </p>
 
           <p className="mb-4">
-            Besides school and software, I'm interested in literature and
-            music, as well as various sports. Some of my favorite authors are
-            George R. R. Martin, Vladimir Nabokov, and Sylvia Plath. I've
-            played tennis competetively up until recently, and I also enjoy skateboarding,
+            Besides school and software, I'm interested in literature and music,
+            as well as various sports. Some of my favorite authors are George R.
+            R. Martin, Vladimir Nabokov, and Sylvia Plath. I've played tennis
+            competetively up until recently, and I also enjoy skateboarding,
             golf, and snowboarding.
           </p>
 
           <p className="">
             Finally, I've been working as an instructor at various Mathnasium
             locations for nearly two years at this point, and I do private
-            tutoring as well when the opportunity presents itself. I truly enjoy tutoring as I
-            get to directly help people with
-            something that I enjoy. Nothing makes me happier than helping a student
-            acheive an "aha" moment or getting them excited about a subject many see
-            as dry. I also plan to start tutoring people in Computer Science topics, too.
+            tutoring as well when the opportunity presents itself. I truly enjoy
+            tutoring as I get to directly help people with something that I
+            enjoy. Nothing makes me happier than helping a student acheive an
+            "aha" moment or getting them excited about a subject many see as
+            dry. I also plan to start tutoring people in Computer Science
+            topics, too.
           </p>
         </Card>
 
@@ -85,7 +87,8 @@ export function About() {
               warehouse worker, then (I occassionally still do) as a tennis
               instructor, and now as a math instructor. The last two positions
               have largely been jobs where I work with kids, which I enjoy.
-              <br /><br />
+              <br />
+              <br />
               See my{" "}
               <a
                 className="link"

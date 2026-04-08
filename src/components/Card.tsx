@@ -1,4 +1,4 @@
-import { ComponentChildren } from 'preact';
+import type { ComponentChildren } from "preact";
 
 interface CardProps {
   title?: string;
@@ -9,13 +9,9 @@ export default function Card({ title, children }: CardProps) {
   return (
     <div className="card bg-base-200 shadow-xl border border-base-300">
       <div className="card-body">
-        {title && (
-          <div className="card-title">
-            {title}
-          </div>
-        )}
+        {title && <div className="card-title">{title}</div>}
         {children}
       </div>
     </div>
-  )
+  );
 }

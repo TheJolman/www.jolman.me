@@ -1,20 +1,20 @@
-import Card from '../../components/Card'
-import { signal } from '@preact/signals';
-import ReactMarkdown from 'react-markdown';
-import remarkGfm from 'remark-gfm';
-import './style.css';
+import { signal } from "@preact/signals";
+import ReactMarkdown from "react-markdown";
+import remarkGfm from "remark-gfm";
+import Card from "../../components/Card";
+import "./style.css";
 
-const markdownSignal = signal('')
-fetch('https://raw.githubusercontent.com/TheJolman/resume/main/resume.md')
+const markdownSignal = signal("");
+fetch("https://raw.githubusercontent.com/TheJolman/resume/main/resume.md")
   .then((response) => response.text())
   .then((text) => {
     markdownSignal.value = text;
   })
-  .catch((error) => console.error('Failed to fetch resume source:' + error));
+  .catch((error) => console.error(`Failed to fetch resume source: ${error}`));
 
 export function Resume() {
   if (!markdownSignal) {
-    return <p className="m-5">Fetching my most recent resume...</p>
+    return <p className="m-5">Fetching my most recent resume...</p>;
   }
 
   return (
@@ -32,7 +32,9 @@ export function Resume() {
       </div>
       <main className="resume-container">
         <Card>
-          <ReactMarkdown remarkPlugins={[remarkGfm]}>{markdownSignal.value}</ReactMarkdown>
+          <ReactMarkdown remarkPlugins={[remarkGfm]}>
+            {markdownSignal.value}
+          </ReactMarkdown>
         </Card>
       </main>
     </div>

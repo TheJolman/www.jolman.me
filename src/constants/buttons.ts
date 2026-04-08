@@ -1,18 +1,18 @@
 export const PageLinks = [
   {
     href: "/portfolio",
-    content: "Portfolio"
+    content: "Portfolio",
   },
   {
     href: "/resume",
-    content: "Resume"
+    content: "Resume",
   },
   {
     href: "/about",
-    content: "About"
+    content: "About",
   },
   {
     href: "/tutoring",
-    content: "Tutoring"
+    content: "Tutoring",
   },
 ];
