@@ -15,11 +15,8 @@ export default function ThemeToggler() {
 			onClick={() => setTheme(toggleTheme(theme))}
 		>
 			<span className="inline-flex items-center gap-2">
-				<svg
-					aria-hidden
-					viewBox="0 0 24 24"
-					className="size-5"
-				>
+				<svg aria-hidden viewBox="0 0 24 24" className="size-5">
+					<title>{isDark ? "Dark theme icon" : "Light theme icon"}</title>
 					<g
 						stroke="currentColor"
 						strokeWidth="2"
