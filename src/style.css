@@ -1,8 +1,8 @@
 @import "tailwindcss";
 
 @plugin "daisyui" {
-	/* all; */
-	themes:
-		caramellatte --default,
-		coffee --prefersdark;
+  /* all; */
+  themes:
+    caramellatte --default,
+    coffee --prefersdark;
 }

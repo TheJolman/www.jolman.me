@@ -1,12 +1,12 @@
 {
-	"bunVersion": "1.x",
-	"framework": "vite",
-	"buildCommand": "bun run build",
-	"installCommand": "bun install",
-	"rewrites": [
-		{
-			"source": "/(.*)",
-			"destination": "/"
-		}
-	]
+  "bunVersion": "1.x",
+  "framework": "vite",
+  "buildCommand": "bun run build",
+  "installCommand": "bun install",
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "/"
+    }
+  ]
 }

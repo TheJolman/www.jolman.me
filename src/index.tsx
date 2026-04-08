@@ -1,9 +1,9 @@
 import {
-	hydrate,
-	LocationProvider,
-	Route,
-	Router,
-	prerender as ssr,
+  hydrate,
+  LocationProvider,
+  Route,
+  Router,
+  prerender as ssr,
 } from "preact-iso";
 import { Footer } from "./components/Footer";
 
@@ -18,32 +18,32 @@ import { ThemeProvider } from "./providers/theme-provider";
 import "./style.css";
 
 export function App() {
-	return (
-		<LocationProvider>
-			<ThemeProvider>
-				<div className="flex flex-col min-h-screen">
-					<Navbar />
-					<main className="grow flex">
-						<Router>
-							<Route path="/" component={Home} />
-							<Route path="/portfolio" component={Portfolio} />
-							<Route path="/about" component={About} />
-							<Route path="/resume" component={Resume} />
-							<Route path="/tutoring" component={Tutoring} />
-							<Route default component={NotFound} />
-						</Router>
-					</main>
-					<Footer />
-				</div>
-			</ThemeProvider>
-		</LocationProvider>
-	);
+  return (
+    <LocationProvider>
+      <ThemeProvider>
+        <div className="flex flex-col min-h-screen">
+          <Navbar />
+          <main className="grow flex">
+            <Router>
+              <Route path="/" component={Home} />
+              <Route path="/portfolio" component={Portfolio} />
+              <Route path="/about" component={About} />
+              <Route path="/resume" component={Resume} />
+              <Route path="/tutoring" component={Tutoring} />
+              <Route default component={NotFound} />
+            </Router>
+          </main>
+          <Footer />
+        </div>
+      </ThemeProvider>
+    </LocationProvider>
+  );
 }
 
 if (typeof window !== "undefined") {
-	hydrate(<App />, document.getElementById("app"));
+  hydrate(<App />, document.getElementById("app"));
 }
 
 export async function prerender(data) {
-	return await ssr(<App {...data} />);
+  return await ssr(<App {...data} />);
 }
