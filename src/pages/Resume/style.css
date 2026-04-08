@@ -1,41 +1,41 @@
 .resume-container {
-  font-family: sans-serif;
-  line-height: 1.6;
+	font-family: sans-serif;
+	line-height: 1.6;
 }
 
 .resume-container h1,
 .resume-container h2,
 .resume-container h3 {
-  font-weight: bold;
+	font-weight: bold;
 }
 
 .resume-container h1 {
-  font-size: 2.5em;
-  text-align: center;
+	font-size: 2.5em;
+	text-align: center;
 }
 
 .resume-container h2 {
-  font-size: 1.8em;
-  padding-bottom: 0.3em;
+	font-size: 1.8em;
+	padding-bottom: 0.3em;
 }
 
 .resume-container h3 {
-  font-size: 1.3em;
+	font-size: 1.3em;
 }
 
 .resume-container hr {
-  margin-top: 1em;
-  margin-bottom: 1em;
+	margin-top: 1em;
+	margin-bottom: 1em;
 }
 
 .resume-container ul {
-  list-style-type: circle;
-  list-style-position: inside;
-  padding-left: 1em;
+	list-style-type: circle;
+	list-style-position: inside;
+	padding-left: 1em;
 }
 
 /* Contact info at the top */
-.resume-container h1+p {
-  text-align: center;
-  font-size: 0.9em;
+.resume-container h1 + p {
+	text-align: center;
+	font-size: 0.9em;
 }
