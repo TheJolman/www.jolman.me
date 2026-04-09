@@ -1,14 +1,16 @@
+import { useLocation } from "preact-iso";
 import { PageLinks } from "../constants/buttons";
 import ThemeToggler from "./ThemeToggler";
 
 export function Navbar() {
+  const { url } = useLocation();
   return (
     <div className="drawer">
       <input id="sidebar-drawer" type="checkbox" className="drawer-toggle" />
       <div className="drawer-content flex flex-col">
         {/* navbar */}
         <div className="navbar bg-neutral text-neutral-content shadow-xl">
-          <div className="navbar-start gap-1">
+          <div className="navbar-start gap-1 w-auto lg:w-1/2">
             <div className="flex-none lg:hidden">
               <label
                 htmlFor="sidebar-drawer"
@@ -31,24 +33,27 @@ export function Navbar() {
                 </svg>
               </label>
             </div>
-            <a href="/" className="btn btn-ghost text-xl">
+            <h2 className="text-2xl font-bold text-secondary-content italic pl-2">
               Josh Holman
-            </a>
+            </h2>
           </div>
 
           <div className="navbar-center hidden lg:flex">
             <ul className="menu menu-horizontal px-1 join">
-              {PageLinks.map((button) => (
-                <li key={button.href}>
-                  <a className="btn btn-ghost join-item" href={button.href}>
-                    {button.content}
-                  </a>
-                </li>
-              ))}
+              {PageLinks.map((button) => {
+                const isActive = url === button.href;
+                return (
+                  <li key={button.href}>
+                    <a className={`btn join-item ${isActive ? "btn-active" : "btn-ghost"}`} href={button.href}>
+                      {button.content}
+                    </a>
+                  </li>
+                );
+              })}
             </ul>
           </div>
 
-          <div className="navbar-end gap-1">
+          <div className="navbar-end gap-1 pr-2 w-auto lg:w-1/2 justify-end">
             <ThemeToggler />
           </div>
         </div>
@@ -62,7 +67,7 @@ export function Navbar() {
         ></label>
         <ul className="menu bg-base-200 min-h-full w-80 p-4">
           <div className="mb-4 p-4 border-b border-base-300">
-            <h2 className="text-2xl font-bold">Josh Holman</h2>
+            <h2 className="text-2xl font-bold italic">Josh Holman</h2>
             <p className="text-sm opacity-70">Navigation</p>
           </div>
           {PageLinks.map((button) => (
