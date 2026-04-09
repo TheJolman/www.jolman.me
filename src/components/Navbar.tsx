@@ -8,7 +8,7 @@ export function Navbar() {
       <div className="drawer-content flex flex-col">
         {/* navbar */}
         <div className="navbar bg-neutral text-neutral-content shadow-xl">
-          <div className="navbar-start gap-1 pl-2">
+          <div className="navbar-start gap-1 w-auto lg:w-1/2">
             <div className="flex-none lg:hidden">
               <label
                 htmlFor="sidebar-drawer"
@@ -31,9 +31,9 @@ export function Navbar() {
                 </svg>
               </label>
             </div>
-            <p className="text-xl font-bold">
+            <h2 className="text-2xl font-bold text-secondary-content italic pl-2">
               Josh Holman
-            </p>
+            </h2>
           </div>
 
           <div className="navbar-center hidden lg:flex">
@@ -48,7 +48,7 @@ export function Navbar() {
             </ul>
           </div>
 
-          <div className="navbar-end gap-1 pr-2">
+          <div className="navbar-end gap-1 pr-2 flex-1 lg:w-1/2">
             <ThemeToggler />
           </div>
         </div>
@@ -62,7 +62,7 @@ export function Navbar() {
         ></label>
         <ul className="menu bg-base-200 min-h-full w-80 p-4">
           <div className="mb-4 p-4 border-b border-base-300">
-            <h2 className="text-2xl font-bold">Josh Holman</h2>
+            <h2 className="text-2xl font-bold italic">Josh Holman</h2>
             <p className="text-sm opacity-70">Navigation</p>
           </div>
           {PageLinks.map((button) => (
