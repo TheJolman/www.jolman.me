@@ -1,7 +1,9 @@
+import { useLocation } from "preact-iso";
 import { PageLinks } from "../constants/buttons";
 import ThemeToggler from "./ThemeToggler";
 
 export function Navbar() {
+  const { url } = useLocation();
   return (
     <div className="drawer">
       <input id="sidebar-drawer" type="checkbox" className="drawer-toggle" />
@@ -38,17 +40,20 @@ export function Navbar() {
 
           <div className="navbar-center hidden lg:flex">
             <ul className="menu menu-horizontal px-1 join">
-              {PageLinks.map((button) => (
-                <li key={button.href}>
-                  <a className="btn btn-ghost join-item" href={button.href}>
-                    {button.content}
-                  </a>
-                </li>
-              ))}
+              {PageLinks.map((button) => {
+                const isActive = url === button.href;
+                return (
+                  <li key={button.href}>
+                    <a className={`btn join-item ${isActive ? "btn-active" : "btn-ghost"}`} href={button.href}>
+                      {button.content}
+                    </a>
+                  </li>
+                );
+              })}
             </ul>
           </div>
 
-          <div className="navbar-end gap-1 pr-2 flex-1 lg:w-1/2">
+          <div className="navbar-end gap-1 pr-2 w-auto lg:w-1/2 justify-end">
             <ThemeToggler />
           </div>
         </div>
