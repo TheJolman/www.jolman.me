@@ -1,5 +1,9 @@
 export const PageLinks = [
   {
+    href: "/",
+    content: "Home",
+  },
+  {
     href: "/portfolio",
     content: "Portfolio",
   },

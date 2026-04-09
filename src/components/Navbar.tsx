@@ -8,7 +8,7 @@ export function Navbar() {
       <div className="drawer-content flex flex-col">
         {/* navbar */}
         <div className="navbar bg-neutral text-neutral-content shadow-xl">
-          <div className="navbar-start gap-1">
+          <div className="navbar-start gap-1 pl-2">
             <div className="flex-none lg:hidden">
               <label
                 htmlFor="sidebar-drawer"
@@ -31,9 +31,9 @@ export function Navbar() {
                 </svg>
               </label>
             </div>
-            <a href="/" className="btn btn-ghost text-xl">
+            <p className="text-xl font-bold">
               Josh Holman
-            </a>
+            </p>
           </div>
 
           <div className="navbar-center hidden lg:flex">
@@ -48,7 +48,7 @@ export function Navbar() {
             </ul>
           </div>
 
-          <div className="navbar-end gap-1">
+          <div className="navbar-end gap-1 pr-2">
             <ThemeToggler />
           </div>
         </div>
