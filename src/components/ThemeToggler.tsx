@@ -8,7 +8,7 @@ export default function ThemeToggler() {
   return (
     <button
       type="button"
-      className="btn btn-ghost btn-sm min-w-[100px]"
+      className="btn btn-ghost btn-sm md:min-w-25"
       aria-pressed={isDark}
       aria-label="Toggle color theme"
       title="Toggle color theme"
