@@ -9,7 +9,7 @@ export function Navbar() {
       <input id="sidebar-drawer" type="checkbox" className="drawer-toggle" />
       <div className="drawer-content flex flex-col">
         {/* navbar */}
-        <div className="navbar bg-neutral text-neutral-content shadow-xl">
+        <div className="navbar bg-neutral text-neutral-content shadow-xl flex items-center justify-between">
           <div className="navbar-start gap-1 w-auto lg:w-1/2">
             <div className="flex-none lg:hidden">
               <label
@@ -44,7 +44,10 @@ export function Navbar() {
                 const isActive = url === button.href;
                 return (
                   <li key={button.href}>
-                    <a className={`btn join-item ${isActive ? "btn-active" : "btn-ghost"}`} href={button.href}>
+                    <a
+                      className={`btn join-item ${isActive ? "btn-active" : "btn-ghost"}`}
+                      href={button.href}
+                    >
                       {button.content}
                     </a>
                   </li>
