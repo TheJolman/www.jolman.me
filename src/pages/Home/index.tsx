@@ -26,7 +26,9 @@ export function Home() {
               <code>{artSignal}</code>
             </pre>
           </div>
-          <pre data-prefix="❯" className="animate-blink"></pre>
+          <pre data-prefix="❯">
+            <span className="animate-blink">█</span>
+          </pre>
         </div>
         <div className="flex flex-col gap-4 text-center max-w-xl">
           <h1 className="text-3xl text-center sm:text-4xl lg:text-5xl font-bold text-shadow-lg">
