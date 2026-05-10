@@ -7,7 +7,7 @@ interface CardProps {
 
 export default function Card({ title, children }: CardProps) {
   return (
-    <div className="card bg-neutral text-neutral-content shadow-xl border border-neutral-content">
+    <div className="card bg-neutral text-neutral-content shadow-xl border border-accent">
       <div className="card-body">
         {title && <div className="card-title">{title}</div>}
         {children}

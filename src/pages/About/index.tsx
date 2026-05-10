@@ -4,7 +4,7 @@ import Card from "../../components/Card";
 export function About() {
   return (
     <div className="max-w-3xl mx-auto flex flex-col items-center my-6 gap-4">
-      <h1 className="text-2xl font-bold text-secondary">About Me</h1>
+      <h1 className="text-2xl font-bold text-secondary text-shadow-md">About Me</h1>
       <div className="avatar">
         <div className="w-80 rounded-xl shadow-200 shadow-xl border border-base-300">
           <img src={profilePic} alt="Josh Holman" />

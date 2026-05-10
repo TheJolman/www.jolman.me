@@ -50,7 +50,7 @@ export function Portfolio() {
   return (
     <div className="max-w-3xl mx-auto flex flex-col my-6 items-center gap-4">
       <div className="flex flex-col text-center gap-4">
-        <h1 className="text-2xl font-bold text-secondary">Professional Portfolio</h1>
+        <h1 className="text-2xl font-bold text-secondary text-shadow-md">Professional Portfolio</h1>
         <div className="join">
           {links.map((link) => (
             <a
