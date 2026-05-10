@@ -26,6 +26,7 @@
     "@biomejs/biome": "2.4.10",
     "@preact/preset-vite": "^2.10.2",
     "@tailwindcss/typography": "^0.5.19",
+    "baseline-browser-mapping": "^2.10.29",
     "daisyui": "^5.5.5",
     "typescript": "^5.9.3",
     "vite": "^7.2.4"
