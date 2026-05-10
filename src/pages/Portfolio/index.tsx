@@ -50,14 +50,14 @@ export function Portfolio() {
   return (
     <div className="max-w-3xl mx-auto flex flex-col my-6 items-center gap-4">
       <div className="flex flex-col text-center gap-4">
-        <h1 className="text-2xl font-bold">Professional Portfolio</h1>
+        <h1 className="text-2xl font-bold text-secondary">Professional Portfolio</h1>
         <div className="join">
           {links.map((link) => (
             <a
               href={link.href}
               key={link.href}
               target={link.href != "/resume" ? "_blank" : ""}
-              className="btn btn-neutral join-item"
+              className="btn btn-secondary join-item"
             >
               {link.content}
             </a>
@@ -88,7 +88,7 @@ export function Portfolio() {
             isolated dev shell that's lighter than Docker and loads/unloads
             automatically. Also included is a Nix package definition that allows
             anyone with nix installed to run our app(s) with
-            <code className="text-accent"> nix run </code>or by adding our repo
+            <code className="text-secondary"> nix run </code>or by adding our repo
             to their flake inputs. Our CI pipeline of course takes advantage of
             this as well, ensuring that the exact environment that our
             developers are using is being used in CI as well.
@@ -197,8 +197,8 @@ export function Portfolio() {
             Simple and fast CLI that keeps track of priorities. Uses file
             serialization and shortest string matching for easy use. Written
             with bleeding-edge C++23 since it's a personal project. Hello{" "}
-            <code className="text-accent">std::print</code> and{" "}
-            <code className="text-accent">std::optional</code>!
+            <code className="text-secondary">std::print</code> and{" "}
+            <code className="text-secondary">std::optional</code>!
             <br />
             Uses pre-commit hooks for maintainting code quality that I'm super
             picky about.

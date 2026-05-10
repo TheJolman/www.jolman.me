@@ -16,7 +16,7 @@ export function Home() {
   return (
     <div className="hero grow">
       <div className="hero-content flex-col lg:flex-row w-full px-4 lg:px-8 gap-10">
-        <div className="mockup-code shadow-xl lg:w-auto overflow-x-auto bg-primary-content">
+        <div className="mockup-code shadow-xl lg:w-auto overflow-x-auto bg-base-300">
           <pre data-prefix="❯">
             <span className="text-primary">nix run</span> github:thejolman/art
           </pre>
@@ -30,7 +30,7 @@ export function Home() {
             <span className="animate-blink">█</span>
           </pre>
         </div>
-        <div className="flex flex-col gap-4 text-center max-w-xl">
+        <div className="flex flex-col gap-6 text-center max-w-xl">
           <h1 className="text-3xl text-secondary text-center sm:text-4xl lg:text-5xl font-bold text-shadow-lg">
             Welcome to my site.
           </h1>
