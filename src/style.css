@@ -76,3 +76,14 @@
   --depth: 0;
   --noise: 0;
 }
+
+@layer components {
+  .card:hover {
+    translate: -1px -1px;
+  }
+
+  .btn:hover {
+    translate: 0px -1px;
+  }
+
+}
