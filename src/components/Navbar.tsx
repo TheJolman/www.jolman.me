@@ -9,7 +9,7 @@ export function Navbar() {
       <input id="sidebar-drawer" type="checkbox" className="drawer-toggle" />
       <div className="drawer-content flex flex-col">
         {/* navbar */}
-        <div className="navbar bg-neutral text-neutral-content shadow-xl flex items-center justify-between">
+        <div className="navbar bg-primary text-primary-content shadow-xl flex items-center justify-between rounded-b-xl">
           <div className="navbar-start gap-1 w-auto lg:w-1/2">
             <div className="flex-none lg:hidden">
               <label
@@ -33,7 +33,7 @@ export function Navbar() {
                 </svg>
               </label>
             </div>
-            <h2 className="text-2xl font-bold text-secondary-content italic pl-2">
+            <h2 className="text-2xl font-bold text-primary-content italic pl-2">
               Josh Holman
             </h2>
           </div>
