@@ -3,6 +3,76 @@
 @plugin "daisyui" {
   /* all; */
   themes:
-    caramellatte --default,
-    coffee --prefersdark;
+    rose-pine-dawn --default,
+    rose-pine --prefersdark;
+}
+
+@plugin "daisyui/theme" {
+  name: "rose-pine-dawn";
+  default: true;
+  color-scheme: light;
+
+  --color-base-100: #faf4ed;
+  --color-base-200: #fffaf3;
+  --color-base-300: #f2e9e1;
+  --color-base-content: #575279;
+  --color-primary: #286983;
+  --color-primary-content: #fffaf3;
+  --color-secondary: #907aa9;
+  --color-secondary-content: #fffaf3;
+  --color-accent: #d7827e;
+  --color-accent-content: #fffaf3;
+  --color-neutral: #575279;
+  --color-neutral-content: #faf4ed;
+  --color-info: #56949f;
+  --color-info-content: #fffaf3;
+  --color-success: #286983;
+  --color-success-content: #fffaf3;
+  --color-warning: #ea9d34;
+  --color-warning-content: #575279;
+  --color-error: #b4637a;
+  --color-error-content: #fffaf3;
+  --radius-selector: 2rem;
+  --radius-field: 0.5rem;
+  --radius-box: 1rem;
+  --size-selector: 0.25rem;
+  --size-field: 0.25rem;
+  --border: 1px;
+  --depth: 0;
+  --noise: 0;
+}
+
+@plugin "daisyui/theme" {
+  name: "rose-pine";
+  prefersdark: true;
+  color-scheme: dark;
+
+  --color-base-100: #191724;
+  --color-base-200: #1f1d2e;
+  --color-base-300: #26233a;
+  --color-base-content: #e0def4;
+  --color-primary: #31748f;
+  --color-primary-content: #e0def4;
+  --color-secondary: #c4a7e7;
+  --color-secondary-content: #191724;
+  --color-accent: #ebbcba;
+  --color-accent-content: #191724;
+  --color-neutral: #6e6a86;
+  --color-neutral-content: #e0def4;
+  --color-info: #9ccfd8;
+  --color-info-content: #191724;
+  --color-success: #31748f;
+  --color-success-content: #e0def4;
+  --color-warning: #f6c177;
+  --color-warning-content: #191724;
+  --color-error: #eb6f92;
+  --color-error-content: #191724;
+  --radius-selector: 2rem;
+  --radius-field: 0.5rem;
+  --radius-box: 1rem;
+  --size-selector: 0.25rem;
+  --size-field: 0.25rem;
+  --border: 1px;
+  --depth: 0;
+  --noise: 0;
 }
