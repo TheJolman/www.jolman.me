@@ -6,7 +6,7 @@ export function About() {
 
   return (
     <div className="max-w-3xl mx-auto flex flex-col items-center my-8 gap-4">
-      <h1 className="page-heading text-2xl font-bold text-secondary">
+      <h1 className="page-heading text-2xl font-bold text-primary">
         About Me
       </h1>
       <div className="avatar">
