@@ -35,9 +35,7 @@ export function Tutoring() {
             Please provide grade level and name/author/edition of textbook if
             applicable.
           </p>
-          <h3 className="text-lg font-semibold text-primary">
-            Rates
-          </h3>
+          <h3 className="text-lg font-semibold text-primary">Rates</h3>
           <p>
             <span className="font-semibold text-success">$35</span> for sessions
             up to 1 hour

@@ -38,8 +38,14 @@ export function Footer() {
         </p>
 
         <div className="flex gap-3">
-          <ExternalLink href={"https://github.com/thejolman/www.jolman.me"} text={"source code"} />
-          <ExternalLink href={"https://github.com/TheJolman/www.jolman.me/issues/new"} text={"report a bug"} />
+          <ExternalLink
+            href={"https://github.com/thejolman/www.jolman.me"}
+            text={"source code"}
+          />
+          <ExternalLink
+            href={"https://github.com/TheJolman/www.jolman.me/issues/new"}
+            text={"report a bug"}
+          />
         </div>
       </aside>
     </footer>
