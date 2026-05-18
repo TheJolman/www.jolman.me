@@ -33,7 +33,7 @@ export function Navbar() {
                 </svg>
               </label>
             </div>
-            <h2 className="pl-2 text-xl font-black italic tracking-[0.08em] text-primary-content sm:text-2xl">
+            <h2 className="pl-2 text-xl font-black italic text-primary-content sm:text-2xl">
               Josh Holman
             </h2>
           </div>
