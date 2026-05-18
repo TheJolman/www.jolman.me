@@ -32,8 +32,8 @@ export function About() {
             for more info). On top of being a lead developer, I created
             workshops with my team and personally led and demo'd a few in my
             last semester. Some highlights included my personal favorite, our{" "}
-            <em>Advanced Git Workshop</em>, as well as our
-            <em> Intro to Rust Workshop</em>, and our{" "}
+            <em>Advanced Git Workshop</em>, as well as our{" "}
+            <em>Intro to Rust Workshop</em>, and our{" "}
             <em>GitHub Actions Workshop</em>. All of these were designed to
             introduce technologies and tools that would be useful to fellow
             student developers, and to show them how powerful they can be and
