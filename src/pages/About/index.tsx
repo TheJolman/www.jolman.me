@@ -2,11 +2,15 @@ import profilePic from "../../assets/profile.jpg";
 import Card from "../../components/Card";
 
 export function About() {
+  const linkClass = "link link-hover font-semibold text-primary";
+
   return (
-    <div className="max-w-3xl mx-auto flex flex-col items-center my-6 gap-4">
-      <h1 className="text-2xl font-bold">About Me</h1>
+    <div className="max-w-3xl mx-auto flex flex-col items-center my-8 gap-4">
+      <h1 className="page-heading text-2xl font-bold text-secondary">
+        About Me
+      </h1>
       <div className="avatar">
-        <div className="w-80 rounded-xl shadow-200 shadow-xl border border-base-300">
+        <div className="w-80 rounded-xl border border-secondary bg-base-200 p-1 shadow-xl">
           <img src={profilePic} alt="Josh Holman" />
         </div>
       </div>
@@ -21,7 +25,7 @@ export function About() {
             Fullerton where I earned a BS in Computer Science with a minor in
             Math. I was a board member of my school's ACM chapter where I led
             one of our open-source projects (see api.acmcsuf.com on my{" "}
-            <a className="link" href="/portfolio">
+            <a className={linkClass} href="/portfolio">
               {" "}
               portfolio
             </a>{" "}
@@ -38,7 +42,10 @@ export function About() {
 
           <p className="mb-4">
             I'm a huge Linux enthusiast (take a look at my{" "}
-            <a className="link" href="https://github.com/thejolman/.dotfiles">
+            <a
+              className={linkClass}
+              href="https://github.com/thejolman/.dotfiles"
+            >
               rice
             </a>
             ) and into tech. I enjoy self-hosting things on my home server,
@@ -91,7 +98,7 @@ export function About() {
               <br />
               See my{" "}
               <a
-                className="link"
+                className={linkClass}
                 href="https://www.linkedin.com/in/jolman-dot-me"
               >
                 linkedin

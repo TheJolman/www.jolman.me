@@ -12,26 +12,48 @@
 .resume-container h1 {
   font-size: 2.5em;
   text-align: center;
+  color: var(--color-primary);
 }
 
 .resume-container h2 {
   font-size: 1.8em;
   padding-bottom: 0.3em;
+  border-bottom: 1px solid
+    color-mix(in oklab, var(--color-secondary) 28%, var(--color-base-300));
+  color: var(--color-secondary);
 }
 
 .resume-container h3 {
   font-size: 1.3em;
+  color: var(--color-accent);
 }
 
 .resume-container hr {
   margin-top: 1em;
   margin-bottom: 1em;
+  border: 0;
+  border-top: 1px solid
+    color-mix(in oklab, var(--color-accent) 35%, var(--color-base-300));
 }
 
 .resume-container ul {
   list-style-type: circle;
   list-style-position: inside;
   padding-left: 1em;
+}
+
+.resume-container a {
+  color: var(--color-primary);
+  text-decoration-color: color-mix(
+    in oklab,
+    var(--color-primary) 35%,
+    transparent
+  );
+  text-decoration-thickness: 0.08em;
+}
+
+.resume-container strong {
+  color: var(--color-base-content);
 }
 
 /* Contact info at the top */
