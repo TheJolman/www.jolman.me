@@ -10,7 +10,7 @@ export function About() {
         About Me
       </h1>
       <div className="avatar">
-        <div className="w-80 rounded-xl border border-secondary bg-base-200 p-1 shadow-xl">
+        <div className="w-80 rounded-xl border border-secondary bg-base-200 shadow-xl">
           <img src={profilePic} alt="Josh Holman" />
         </div>
       </div>
