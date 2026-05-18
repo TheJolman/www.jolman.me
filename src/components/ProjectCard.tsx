@@ -23,12 +23,22 @@ export default function ProjectCard({
 
       <div className="card-actions justify-end mt-4">
         {liveLink && (
-          <a href={liveLink} target="_blank" className="btn btn-secondary">
+          <a
+            href={liveLink}
+            target="_blank"
+            className="btn btn-secondary"
+            rel="noopener"
+          >
             🌐 Visit Site
           </a>
         )}
         {sourceLink && (
-          <a href={sourceLink} target="_blank" className="btn btn-primary">
+          <a
+            href={sourceLink}
+            target="_blank"
+            className="btn btn-primary"
+            rel="noopener"
+          >
             📁 GitHub
           </a>
         )}
