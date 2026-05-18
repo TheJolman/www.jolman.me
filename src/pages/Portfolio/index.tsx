@@ -4,18 +4,15 @@ export function Portfolio() {
   const links = [
     {
       href: "https://www.github.com/TheJolman",
-      content: "My GitHub",
-      className: "btn-primary",
+      content: "GitHub",
     },
     {
       href: "https://www.linkedin.com/in/jolman-dot-me",
-      content: "My Linkedin",
-      className: "btn-secondary",
+      content: "Linkedin",
     },
     {
       href: "/resume",
-      content: "My Resume",
-      className: "btn-accent",
+      content: "Resume",
     },
   ];
 
@@ -77,7 +74,7 @@ export function Portfolio() {
               href={link.href}
               key={link.href}
               target={link.href !== "/resume" ? "_blank" : undefined}
-              className={`btn join-item border-none ${link.className}`}
+              className={`btn join-item border-none btn-neutral`}
             >
               {link.content}
             </a>
