@@ -31,7 +31,7 @@ export function Home() {
           </pre>
         </div>
         <div className="flex flex-col gap-4 text-center max-w-xl">
-          <h1 className="page-heading text-3xl text-center text-secondary text-shadow-lg font-bold sm:text-4xl lg:text-5xl">
+          <h1 className="text-3xl text-center text-primary text-shadow-lg font-bold sm:text-4xl lg:text-5xl">
             Welcome to my site.
           </h1>
           <Card>
