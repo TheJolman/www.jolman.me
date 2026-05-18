@@ -74,7 +74,7 @@ export function Portfolio() {
               href={link.href}
               key={link.href}
               target={link.href !== "/resume" ? "_blank" : undefined}
-              className={`btn join-item border-none btn-neutral`}
+              className={`btn join-item border-none btn-accent`}
             >
               {link.content}
             </a>
