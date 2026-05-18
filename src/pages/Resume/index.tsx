@@ -13,24 +13,24 @@ fetch("https://raw.githubusercontent.com/TheJolman/resume/main/resume.md")
   .catch((error) => console.error(`Failed to fetch resume source: ${error}`));
 
 export function Resume() {
-  if (!markdownSignal) {
+  if (!markdownSignal.value) {
     return <p className="m-5">Fetching my most recent resume...</p>;
   }
 
   return (
-    <div className="max-w-3xl mx-auto flex flex-col items-center my-6 gap-4">
+    <div className="max-w-3xl mx-auto flex flex-col items-center my-8 gap-4">
       <div className="flex flex-col text-center gap-4">
-        <h1 className="text-2xl font-bold">Résumé</h1>
+        <h1 className="page-heading text-2xl font-bold text-primary">Résumé</h1>
         <a
           href="https://github.com/TheJolman/resume/raw/main/resume.pdf"
-          className="btn btn-neutral"
+          className="btn btn-accent border-none"
           target="_blank"
           rel="noopener noreferrer"
         >
           Open as PDF
         </a>
       </div>
-      <main className="resume-container">
+      <main className="resume-container w-full">
         <Card>
           <ReactMarkdown remarkPlugins={[remarkGfm]}>
             {markdownSignal.value}

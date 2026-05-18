@@ -4,15 +4,15 @@ export function Portfolio() {
   const links = [
     {
       href: "https://www.github.com/TheJolman",
-      content: "My GitHub",
+      content: "GitHub",
     },
     {
       href: "https://www.linkedin.com/in/jolman-dot-me",
-      content: "My Linkedin",
+      content: "Linkedin",
     },
     {
       href: "/resume",
-      content: "My Resume",
+      content: "Resume",
     },
   ];
 
@@ -47,17 +47,34 @@ export function Portfolio() {
     },
   ];
 
+  const accordionStyles = [
+    {
+      containerClass: "bg-base-100 border-primary",
+      titleClass: "text-primary",
+    },
+    {
+      containerClass: "bg-base-100 border-secondary",
+      titleClass: "text-secondary",
+    },
+    {
+      containerClass: "bg-base-100 border-accent",
+      titleClass: "text-accent",
+    },
+  ];
+
   return (
-    <div className="max-w-3xl mx-auto flex flex-col my-6 items-center gap-4">
+    <div className="max-w-3xl mx-auto flex flex-col my-8 items-center gap-4">
       <div className="flex flex-col text-center gap-4">
-        <h1 className="text-2xl font-bold">Professional Portfolio</h1>
-        <div className="join">
+        <h1 className="page-heading text-2xl font-bold text-primary">
+          Professional Portfolio
+        </h1>
+        <div className="join flex-wrap justify-center">
           {links.map((link) => (
             <a
               href={link.href}
               key={link.href}
-              target={link.href !== "/resume" ? "_blank" : ""}
-              className="btn btn-neutral join-item"
+              target={link.href !== "/resume" ? "_blank" : undefined}
+              className={`btn join-item border-none btn-accent`}
             >
               {link.content}
             </a>
@@ -88,10 +105,14 @@ export function Portfolio() {
             isolated dev shell that's lighter than Docker and loads/unloads
             automatically. Also included is a Nix package definition that allows
             anyone with nix installed to run our app(s) with
-            <code className="text-accent"> nix run </code>or by adding our repo
-            to their flake inputs. Our CI pipeline of course takes advantage of
-            this as well, ensuring that the exact environment that our
-            developers are using is being used in CI as well.
+            <code className="rounded-box bg-base-300 px-1 text-accent">
+              {" "}
+              nix run{" "}
+            </code>
+            or by adding our repo to their flake inputs. Our CI pipeline of
+            course takes advantage of this as well, ensuring that the exact
+            environment that our developers are using is being used in CI as
+            well.
             <br />
             Due to the nature of our constantly changing team of students, I've
             made documentation a core tenent of this project. When it's not
@@ -197,8 +218,14 @@ export function Portfolio() {
             Simple and fast CLI that keeps track of priorities. Uses file
             serialization and shortest string matching for easy use. Written
             with bleeding-edge C++23 since it's a personal project. Hello{" "}
-            <code className="text-accent">std::print</code> and{" "}
-            <code className="text-accent">std::optional</code>!
+            <code className="rounded-box bg-base-300 px-1 text-accent">
+              std::print
+            </code>{" "}
+            and{" "}
+            <code className="rounded-box bg-base-300 px-1 text-accent">
+              std::optional
+            </code>
+            !
             <br />
             Uses pre-commit hooks for maintainting code quality that I'm super
             picky about.
@@ -206,20 +233,28 @@ export function Portfolio() {
         </ProjectCard>
       </div>
 
-      <div className="divider"></div>
+      <div className="divider divider-secondary"></div>
 
-      <div className="w-full max-w-md mx-auto min-h-[550px]">
+      <div className="mx-auto flex min-h-[550px] w-full max-w-md flex-col gap-3">
         {myData.map((category, index) => (
           <div
             key={category.title}
-            className="collapse collapse-arrow bg-base-200 border border-base-300"
+            className={`collapse collapse-arrow border shadow-lg ${
+              accordionStyles[index % accordionStyles.length].containerClass
+            }`}
           >
             <input
               type="radio"
               name="my-accordian-2"
               defaultChecked={index === 0}
             />
-            <div className="collapse-title font-semibold">{category.title}</div>
+            <div
+              className={`collapse-title font-semibold ${
+                accordionStyles[index % accordionStyles.length].titleClass
+              }`}
+            >
+              {category.title}
+            </div>
             <div className="collapse-content text-md ml-4">
               <div className="min-h-40">
                 <ul style={{ listStyleType: "circle" }}>

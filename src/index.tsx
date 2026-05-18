@@ -21,9 +21,9 @@ export function App() {
   return (
     <LocationProvider>
       <ThemeProvider>
-        <div className="flex flex-col min-h-screen">
+        <div className="flex min-h-screen flex-col text-base-content">
           <Navbar />
-          <main className="grow flex">
+          <main className="flex grow">
             <Router>
               <Route path="/" component={Home} />
               <Route path="/portfolio" component={Portfolio} />
