@@ -9,7 +9,7 @@ export function Navbar() {
       <input id="sidebar-drawer" type="checkbox" className="drawer-toggle" />
       <div className="drawer-content flex flex-col">
         {/* navbar */}
-        <div className="navbar flex items-center justify-between border-b-3 border-primary-content bg-primary text-primary-content shadow-xl rounded-b-lg">
+        <div className="navbar flex items-center justify-between bg-primary text-primary-content shadow-xl rounded-b-lg">
           <div className="navbar-start gap-1 w-auto lg:w-1/2">
             <div className="flex-none lg:hidden">
               <label

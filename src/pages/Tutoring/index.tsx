@@ -19,14 +19,14 @@ export function Tutoring() {
             For availability and scheduling, please reach out to me at&nbsp;
             <a
               href="mailto:tutoring@jolman.me"
-              className="link link-hover font-semibold text-primary"
+              className="link link-hover font-semibold"
             >
               tutoring@jolman.me
             </a>
             &nbsp;or&nbsp;
             <a
               href="tel:+13239170915"
-              className="link link-hover font-semibold text-primary"
+              className="link link-hover font-semibold"
             >
               (323) 917-0915
             </a>

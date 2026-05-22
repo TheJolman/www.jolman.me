@@ -4,7 +4,7 @@
  */
 export const THEMES = {
   dark: "coffee",
-  light: "caramellatte",
+  light: "cupcake",
 } as const;
 
 export type Theme = typeof THEMES.dark | typeof THEMES.light;
