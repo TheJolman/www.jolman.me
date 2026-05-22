@@ -30,7 +30,7 @@ function ExternalLink({ href, text }) {
 
 export function Footer() {
   return (
-    <footer className="footer footer-center footer-vertical border-t-2 border-accent-content bg-accent p-6 text-accent-content rounded-t-lg">
+    <footer className="footer footer-center footer-vertical bg-accent p-6 text-accent-content rounded-t-lg">
       <aside className="flex flex-col items-center gap-1">
         <p>
           Copyright @ {new Date().getFullYear()} - All rights reserved by Josh

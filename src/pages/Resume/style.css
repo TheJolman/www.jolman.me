@@ -20,12 +20,10 @@
   padding-bottom: 0.3em;
   border-bottom: 1px solid
     color-mix(in oklab, var(--color-secondary) 28%, var(--color-base-300));
-  color: var(--color-secondary);
 }
 
 .resume-container h3 {
   font-size: 1.3em;
-  color: var(--color-accent);
 }
 
 .resume-container hr {

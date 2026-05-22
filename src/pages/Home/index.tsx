@@ -16,7 +16,7 @@ export function Home() {
   return (
     <div className="hero grow">
       <div className="hero-content flex-col lg:flex-row w-full px-4 lg:px-8 gap-10">
-        <div className="mockup-code border border-accent bg-neutral text-neutral-content shadow-2xl lg:w-auto overflow-x-auto">
+        <div className="mockup-code bg-neutral text-neutral-content shadow-2xl lg:w-auto overflow-x-auto">
           <pre data-prefix="❯">
             <span className="text-primary">nix run</span> github:thejolman/art
           </pre>

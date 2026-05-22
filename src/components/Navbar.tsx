@@ -9,7 +9,7 @@ export function Navbar() {
       <input id="sidebar-drawer" type="checkbox" className="drawer-toggle" />
       <div className="drawer-content flex flex-col">
         {/* navbar */}
-        <div className="navbar flex items-center justify-between border-b-3 border-primary-content bg-primary text-primary-content shadow-xl rounded-b-lg">
+        <div className="navbar flex items-center justify-between bg-primary text-primary-content shadow-xl rounded-b-lg">
           <div className="navbar-start gap-1 w-auto lg:w-1/2">
             <div className="flex-none lg:hidden">
               <label
@@ -72,7 +72,7 @@ export function Navbar() {
           aria-label="close sidebar"
           className="drawer-overlay"
         ></label>
-        <ul className="menu min-h-full w-80 bg-secondary p-4 text-secondary-content rounded-r-lg border-r-2 border-secondary-content">
+        <ul className="menu min-h-full w-80 bg-secondary p-4 text-secondary-content rounded-r-lg">
           <div className="mb-4 border-b border-secondary-content/15 p-4">
             <h2 className="text-2xl font-black italic">Josh Holman</h2>
             <p className="text-sm text-secondary-content/70">Navigation</p>
