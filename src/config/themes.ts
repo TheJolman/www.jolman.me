@@ -3,8 +3,10 @@
  * Change these values to experiment with different DaisyUI themes.
  */
 export const THEMES = {
-  dark: "coffee",
-  light: "cupcake",
+  // dark: "dracula",
+  // light: "winter",
+  dark: "dark",
+  light: "light",
 } as const;
 
 export type Theme = typeof THEMES.dark | typeof THEMES.light;

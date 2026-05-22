@@ -8,7 +8,7 @@ export function About() {
     <div className="max-w-3xl mx-auto flex flex-col items-center my-8 gap-4">
       <h1 className="page-heading text-2xl font-bold text-primary">About Me</h1>
       <div className="avatar">
-        <div className="w-80 rounded-xl border border-secondary bg-base-200 shadow-xl">
+        <div className="w-80 rounded-xl bg-base-200 shadow-xl">
           <img src={profilePic} alt="Josh Holman" />
         </div>
       </div>

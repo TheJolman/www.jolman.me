@@ -35,27 +35,6 @@ body {
   min-height: 100vh;
 }
 
-.page-heading {
-  position: relative;
-  display: inline-block;
-  padding-bottom: 0.45rem;
-}
-
-.page-heading::after {
-  content: "";
-  position: absolute;
-  left: 50%;
-  bottom: 0;
-  height: 0.22rem;
-  width: calc(100% - 1.25rem);
-  transform: translateX(-50%);
-  border-radius: 999px;
-  background: linear-gradient(90deg,
-      var(--color-primary),
-      var(--color-secondary),
-      var(--color-accent));
-}
-
 .surface-card {
   position: relative;
   overflow: hidden;

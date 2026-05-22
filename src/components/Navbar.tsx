@@ -45,11 +45,10 @@ export function Navbar() {
                 return (
                   <li key={button.href}>
                     <a
-                      className={`btn join-item border-none ${
-                        isActive
+                      className={`btn join-item border-none ${isActive
                           ? "btn-secondary text-secondary-content"
                           : "btn-ghost text-primary-content/80 hover:bg-primary-content/10 hover:text-primary-content"
-                      }`}
+                        }`}
                       href={button.href}
                     >
                       {button.content}
@@ -72,7 +71,7 @@ export function Navbar() {
           aria-label="close sidebar"
           className="drawer-overlay"
         ></label>
-        <ul className="menu min-h-full w-80 bg-secondary p-4 text-secondary-content rounded-r-lg border-r-2 border-secondary-content">
+        <ul className="menu min-h-full w-80 bg-secondary p-4 text-secondary-content rounded-r-lg">
           <div className="mb-4 border-b border-secondary-content/15 p-4">
             <h2 className="text-2xl font-black italic">Josh Holman</h2>
             <p className="text-sm text-secondary-content/70">Navigation</p>
@@ -80,11 +79,10 @@ export function Navbar() {
           {PageLinks.map((button) => (
             <li key={button.href}>
               <a
-                className={`btn py-3 text-lg justify-start border-none ${
-                  url === button.href
+                className={`btn py-3 text-lg justify-start border-none ${url === button.href
                     ? "btn-accent text-accent-content"
                     : "btn-ghost text-secondary-content hover:bg-secondary-content/10 hover:text-secondary-content"
-                }`}
+                  }`}
                 href={button.href}
                 onClick={() => {
                   const drawer = document.getElementById(
