@@ -2,8 +2,7 @@
 
 @plugin "daisyui" {
   /* all; */
-  themes:
-    all;
+  themes: all;
   /* caramellatte --default, */
   /* coffee --prefersdark; */
 }
@@ -20,15 +19,21 @@ html {
 body {
   min-height: 100vh;
   background:
-    radial-gradient(circle at top left,
+    radial-gradient(
+      circle at top left,
       color-mix(in oklab, var(--color-secondary) 14%, transparent) 0,
-      transparent 28rem),
-    radial-gradient(circle at 85% 15%,
+      transparent 28rem
+    ),
+    radial-gradient(
+      circle at 85% 15%,
       color-mix(in oklab, var(--color-accent) 16%, transparent) 0,
-      transparent 24rem),
-    linear-gradient(180deg,
+      transparent 24rem
+    ),
+    linear-gradient(
+      180deg,
       color-mix(in oklab, var(--color-primary) 6%, var(--color-base-100)) 0%,
-      var(--color-base-100) 18rem);
+      var(--color-base-100) 18rem
+    );
 }
 
 #app {
@@ -45,8 +50,10 @@ body {
   position: absolute;
   inset: 0 0 auto;
   height: 0.28rem;
-  background: linear-gradient(90deg,
-      var(--color-primary),
-      var(--color-secondary),
-      var(--color-accent));
+  background: linear-gradient(
+    90deg,
+    var(--color-primary),
+    var(--color-secondary),
+    var(--color-accent)
+  );
 }

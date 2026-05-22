@@ -45,10 +45,11 @@ export function Navbar() {
                 return (
                   <li key={button.href}>
                     <a
-                      className={`btn join-item border-none ${isActive
+                      className={`btn join-item border-none ${
+                        isActive
                           ? "btn-secondary text-secondary-content"
                           : "btn-ghost text-primary-content/80 hover:bg-primary-content/10 hover:text-primary-content"
-                        }`}
+                      }`}
                       href={button.href}
                     >
                       {button.content}
@@ -79,10 +80,11 @@ export function Navbar() {
           {PageLinks.map((button) => (
             <li key={button.href}>
               <a
-                className={`btn py-3 text-lg justify-start border-none ${url === button.href
+                className={`btn py-3 text-lg justify-start border-none ${
+                  url === button.href
                     ? "btn-accent text-accent-content"
                     : "btn-ghost text-secondary-content hover:bg-secondary-content/10 hover:text-secondary-content"
-                  }`}
+                }`}
                 href={button.href}
                 onClick={() => {
                   const drawer = document.getElementById(
