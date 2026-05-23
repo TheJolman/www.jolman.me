@@ -1,4 +1,4 @@
-import profilePic from "../../assets/profile.jpg";
+import profilePic from "../../assets/profile2.jpg";
 import Card from "../../components/Card";
 
 export function About() {
