@@ -1,7 +1,7 @@
 import profilePic from "../../assets/profile2.jpg";
 import Card from "../../components/Card";
 
-export function About() {
+export default function About() {
   const linkClass = "link link-hover font-semibold text-primary";
 
   return (

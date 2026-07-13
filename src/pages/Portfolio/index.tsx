@@ -1,6 +1,6 @@
 import ProjectCard from "../../components/ProjectCard";
 
-export function Portfolio() {
+export default function Portfolio() {
   const links = [
     {
       href: "https://www.github.com/TheJolman",

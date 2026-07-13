@@ -12,7 +12,7 @@ fetch(asciiArt)
   })
   .catch((error) => console.error("Could not fetch homepage art:", error));
 
-export function Home() {
+export default function Home() {
   return (
     <div className="hero grow">
       <div className="hero-content flex-col lg:flex-row w-full px-4 lg:px-8 gap-10">
