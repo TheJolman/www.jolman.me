@@ -19,4 +19,8 @@ export const PageLinks = [
     href: "/tutoring",
     content: "Tutoring",
   },
+  {
+    href: "https://jolman.leaflet.pub",
+    content: "Blog",
+  },
 ];
