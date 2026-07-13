@@ -42,15 +42,17 @@ export function Navbar() {
             <ul className="menu menu-horizontal join gap-1 px-1">
               {PageLinks.map((button) => {
                 const isActive = url === button.href;
+                const isInternal = button.href.startsWith("/");
                 return (
                   <li key={button.href}>
                     <a
-                      className={`btn join-item border-none ${
-                        isActive
-                          ? "btn-secondary text-secondary-content"
-                          : "btn-ghost text-primary-content/80 hover:bg-primary-content/10 hover:text-primary-content"
-                      }`}
+                      className={`btn join-item border-none ${isActive
+                        ? "btn-secondary text-secondary-content"
+                        : "btn-ghost text-primary-content/80 hover:bg-primary-content/10 hover:text-primary-content"
+                        }`}
                       href={button.href}
+                      target={isInternal ? undefined : "_blank"}
+                      rel={isInternal ? undefined : "noopener noreferrer"}
                     >
                       {button.content}
                     </a>
@@ -80,11 +82,10 @@ export function Navbar() {
           {PageLinks.map((button) => (
             <li key={button.href}>
               <a
-                className={`btn py-3 text-lg justify-start border-none ${
-                  url === button.href
-                    ? "btn-accent text-accent-content"
-                    : "btn-ghost text-secondary-content hover:bg-secondary-content/10 hover:text-secondary-content"
-                }`}
+                className={`btn py-3 text-lg justify-start border-none ${url === button.href
+                  ? "btn-accent text-accent-content"
+                  : "btn-ghost text-secondary-content hover:bg-secondary-content/10 hover:text-secondary-content"
+                  }`}
                 href={button.href}
                 onClick={() => {
                   const drawer = document.getElementById(
