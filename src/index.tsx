@@ -20,7 +20,7 @@ const Portfolio = lazy(() => import("./pages/Portfolio"));
 const Resume = lazy(() => import("./pages/Resume"));
 const Tutoring = lazy(() => import("./pages/Tutoring"));
 
-function ExternalRedirect({ to }) {
+function ExternalRedirect({ to }: { to: string }) {
   useEffect(() => {
     window.location.href = to;
   });
@@ -58,10 +58,8 @@ export function App() {
   );
 }
 
-if (typeof window !== "undefined") {
-  hydrate(<App />, document.getElementById("app"));
-}
+hydrate(<App />);
 
-export async function prerender(data) {
-  return await ssr(<App {...data} />);
-}
+// export async function prerender(data) {
+//   return await ssr(<App {...data} />);
+// }
