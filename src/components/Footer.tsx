@@ -1,4 +1,4 @@
-function ExternalLink({ href, text }) {
+function ExternalLink({ href, text }: { href: string, text: string }) {
   return (
     <a
       href={href}
