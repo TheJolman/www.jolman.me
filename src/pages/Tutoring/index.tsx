@@ -1,6 +1,6 @@
 import Card from "../../components/Card";
 
-export function Tutoring() {
+export default function Tutoring() {
   return (
     <div className="max-w-3xl mx-auto flex flex-col items-center my-8 gap-4">
       <div className="flex flex-col text-center gap-4">

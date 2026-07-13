@@ -12,7 +12,7 @@ fetch("https://raw.githubusercontent.com/TheJolman/resume/main/resume.md")
   })
   .catch((error) => console.error(`Failed to fetch resume source: ${error}`));
 
-export function Resume() {
+export default function Resume() {
   if (!markdownSignal.value) {
     return <p className="m-5">Fetching my most recent resume...</p>;
   }
