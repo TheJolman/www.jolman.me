@@ -7,6 +7,7 @@ import {
   lazy,
   ErrorBoundary,
 } from "preact-iso";
+import { useEffect } from "preact/hooks";
 import { Navbar } from './components/Navbar'
 import { Footer } from "./components/Footer";
 import { ThemeProvider } from "./providers/theme-provider";
@@ -18,6 +19,15 @@ const Home = lazy(() => import("./pages/Home"));
 const Portfolio = lazy(() => import("./pages/Portfolio"));
 const Resume = lazy(() => import("./pages/Resume"));
 const Tutoring = lazy(() => import("./pages/Tutoring"));
+
+function ExternalRedirect({ to }) {
+  useEffect(() => {
+    window.location.href = to;
+  })
+  return (
+    <p>Redirecting...</p>
+  )
+}
 
 export function App() {
   return (
@@ -33,6 +43,7 @@ export function App() {
                 <Route path="/about" component={About} />
                 <Route path="/resume" component={Resume} />
                 <Route path="/tutoring" component={Tutoring} />
+                <Route path="/blog" component={() => <ExternalRedirect to="https://jolman.leaflet.pub" />} />
                 <Route default component={NotFound} />
               </Router>
             </main>
