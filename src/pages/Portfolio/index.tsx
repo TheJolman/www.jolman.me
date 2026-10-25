@@ -10,56 +10,6 @@ export default function Portfolio() {
       href: "https://www.linkedin.com/in/jolman-dot-me",
       content: "Linkedin",
     },
-    {
-      href: "/resume",
-      content: "Resume",
-    },
-  ];
-
-  const myData = [
-    {
-      title: "Relevant Coursework",
-      content: [
-        "Artifical Intelligence",
-        "Machine Learning",
-        "Data Science",
-        "Database Systems",
-        "Operating Systems",
-      ],
-    },
-    {
-      title: "Technical Interests",
-      content: [
-        "Programming Languages and Compilers",
-        "Linux and Operating Systems",
-        "DevOps",
-        "System Administration",
-      ],
-    },
-    {
-      title: "Technical Skills",
-      content: [
-        "Python, C/C++, Java, Go, Lua, bash, SQL, Matlab",
-        "Django, FastAPI, Python DS/ML libraries",
-        "Nix/NixOS, Linux, Docker",
-        "GitHub Actions, Vim",
-      ],
-    },
-  ];
-
-  const accordionStyles = [
-    {
-      containerClass: "bg-base-100 border-primary",
-      titleClass: "text-primary",
-    },
-    {
-      containerClass: "bg-base-100 border-secondary",
-      titleClass: "text-secondary",
-    },
-    {
-      containerClass: "bg-base-100 border-accent",
-      titleClass: "text-accent",
-    },
   ];
 
   return (
@@ -87,6 +37,7 @@ export default function Portfolio() {
           title="Club Data API: api.acmcsuf.com"
           technologies="Go, Gin, SQLite, OpenAPI, Nix, GitHub Actions"
           sourceLink="https://github.com/acmcsufoss/api.acmcsuf.com"
+          liveLink="https://api.acmcsuf.com/docs"
         >
           <p>
             acm@CSUF's official data layer. Utilized Discord OAuth2 to allow
@@ -231,41 +182,6 @@ export default function Portfolio() {
             picky about.
           </p>
         </ProjectCard>
-      </div>
-
-      <div className="divider divider-secondary"></div>
-
-      <div className="mx-auto flex min-h-[550px] w-full max-w-md flex-col gap-3">
-        {myData.map((category, index) => (
-          <div
-            key={category.title}
-            className={`collapse collapse-arrow border shadow-lg ${
-              accordionStyles[index % accordionStyles.length].containerClass
-            }`}
-          >
-            <input
-              type="radio"
-              name="my-accordian-2"
-              defaultChecked={index === 0}
-            />
-            <div
-              className={`collapse-title font-semibold ${
-                accordionStyles[index % accordionStyles.length].titleClass
-              }`}
-            >
-              {category.title}
-            </div>
-            <div className="collapse-content text-md ml-4">
-              <div className="min-h-40">
-                <ul style={{ listStyleType: "circle" }}>
-                  {category.content.map((item) => (
-                    <li key={item}>{item}</li>
-                  ))}
-                </ul>
-              </div>
-            </div>
-          </div>
-        ))}
       </div>
     </div>
   );
