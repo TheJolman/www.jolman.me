@@ -38,7 +38,7 @@ export default function Home() {
             <p>
               I'm an open-source developer, and I currently work for Lyntris as an RF Tester and
               automation developer. I'm also a graduate student at CSU, Fullerton and part of
-              leadership at their ACM chapter.
+              leadership for their ACM chapter.
             </p>
           </Card>
         </div>
