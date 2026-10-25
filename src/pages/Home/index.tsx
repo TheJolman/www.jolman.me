@@ -32,13 +32,13 @@ export default function Home() {
         </div>
         <div className="flex flex-col gap-4 text-center max-w-xl">
           <h1 className="text-3xl text-center text-primary text-shadow-lg font-bold sm:text-4xl lg:text-5xl">
-            Welcome to my site.
+            I'm Josh Holman. Hello!
           </h1>
           <Card>
             <p>
-              I'm <b>Josh Holman</b>, a open-source developer and coding tutor.
-              <br />I recently graduated from CSU, Fullerton and am looking for
-              work in back-end development, system administration, and DevOps.
+              I'm an open-source developer, and I currently work for Lyntris as an RF Tester and
+              automation developer. I'm also a graduate student at CSU, Fullerton and part of
+              leadership for their ACM chapter.
             </p>
           </Card>
         </div>

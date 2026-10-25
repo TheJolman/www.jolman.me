@@ -39,7 +39,7 @@ export function Navbar() {
           </div>
 
           <div className="navbar-center hidden lg:flex">
-            <ul className="menu menu-horizontal join gap-1 px-1">
+            <ul className="menu menu-horizontal join px-1">
               {PageLinks.map((button) => {
                 const isActive = url === button.href;
                 const isInternal = button.href.startsWith("/");
